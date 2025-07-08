@@ -82,6 +82,8 @@
 .u-mb-24  { margin-bottom: 2.4rem; }
 .u-mb-40  { margin-bottom: 4rem; }
 .u-mb-72  { margin-bottom: 7.2rem; }
+.u-mb-100 {margin-bottom: 10rem;}
+
 
 /* Padding */
 .u-py-20  { padding-top: 2rem; padding-bottom: 2rem; }
@@ -101,4 +103,14 @@
 /* Border Radius */
 .u-br-8   { border-radius: 0.8rem; }
 .u-br-10  { border-radius: 1rem; }
+
+.u-br-l-10 {
+   border-top-left-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+}
+
+.u-br-r-10 {
+   border-top-right-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+}
 
