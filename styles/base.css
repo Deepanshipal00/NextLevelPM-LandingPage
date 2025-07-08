@@ -43,7 +43,7 @@
     --space-3: 2.4rem;
     --space-4: 3.2rem;
     --space-5: 4rem;
-    --spcae-6: 4.8rem;
+    --space-6: 4.8rem;
     --space-7: 5.6rem;
     --space-8: 6.4rem;
     --space-9: 7.2rem;
@@ -79,7 +79,7 @@
     --font-extra-light: 200;
     --font-light: 300;
     --font-regular: 400;
-    --font-mendium: 500;
+    --font-medium: 500;
     --font-semi-bold: 600;
     --font-bold: 700;
     --font-extra-bold: 800;
@@ -102,18 +102,23 @@
 
     /* Borders */
    --border-radius-4: 4px;
-   --border-radius-8: 10px;
+   --border-radius-8: 8px;
    --border-radius-10: 10px;
    --border-radius-16: 16px;
 
 }
 
-body{
+html{
     font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
     font-family: var(--font-archivo);
     background-color: var(--gray-900);
     color: var(--white);
     line-height: var(--lh-500);
+    overflow-x: hidden;
 }
 
 img{
