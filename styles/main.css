@@ -1,0 +1,101 @@
+@import './base.css';
+@import './component.css';
+@import './utils.css';
+
+/* Navbar */
+
+.navbar__container{
+    display: flex;
+    padding: 3.6rem 6.4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: --var(--white);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-bold);
+    line-height: var(--lh-500);
+}
+
+/* Main Section */
+
+/* Hero Section */
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    align-items: center;
+    position: relative;
+}
+
+.hero__content{
+    display:flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+}
+
+.hero__heading{
+    font-family: var(-font-archivo);
+    font-size: var(--font-size-10xl);
+    line-height: var(--lh-100);
+
+    -webkit-text-stroke: 3px var(--white);
+    text-align: center;
+}
+
+.hero__heading--outline{
+    display: inline-block;
+    color: transparent;
+    font-weight: var(--font-bold);
+    letter-spacing: var(--ls-8);
+}
+
+.hero__heading--solid{
+    display: inline-block;
+    color: var(--white);
+    font-weight: var(--font-thin);
+    letter-spacing: var(--ls-6);
+}
+
+.hero__paragraph{
+    font-family: var(--font-inter);
+    font-weight: var(--font-extra-light);
+    font-size: var(--font-size-3xl);
+    line-height: var(--lh-400);
+    text-align: center;
+}
+
+.hero__illustration{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero__illustration--center{
+    top: -70%;
+}
+
+.hero__illustration--left{
+    left: -20px;
+    bottom: 40px;
+}
+
+.hero__illustration--right{
+    right: -170px;
+    bottom: -100px;
+}
+
+/* Achievements section */
+
+.achievements__content{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
