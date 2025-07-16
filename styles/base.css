@@ -14,11 +14,11 @@
     /* Accent Colors */
     --color-accent-green: #00790C;
     --color-accent-orange: #C87800;
-    --color-accent-blue: #2454FD;
-    --color-accent-purple: #7B009D;
+    --color-accent-blue: #0238F9;
+    --color-accent-purple: #670084;
 
     --color-accent-green-soft: #D4FFD9;
-    --color-accent-orange-soft: #FFE3B9;
+    --color-accent-orange-soft: #FFE7C3;
     --color-accent-blue-soft: #E3E9FF;
     --color-accent-purple-soft: #F6D4FF;
 
@@ -48,6 +48,9 @@
     --space-8: 6.4rem;
     --space-9: 7.2rem;
     --space-10: 8rem;
+    --space-lg: 10rem;
+    --space-12: 12rem;
+    --space-20: 20rem;
 
     /* Typography/fonts */
 
@@ -105,6 +108,7 @@
    --border-radius-8: 8px;
    --border-radius-10: 10px;
    --border-radius-16: 16px;
+   --border-radius-20: 20px;
 
 }
 
@@ -131,7 +135,7 @@ a{
     color: inherit;
 }
 
-ul{
+ul, ol{
     list-style: none;
     padding: 0;
 }
