@@ -1,0 +1,131 @@
+/* Achievements section */
+
+.achievements{
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+}
+
+.achievements__content{
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    width: 90%;
+    min-height: 16rem;
+}
+
+/* Achievement Card */
+
+.achievement__item{
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    /* justify-content: center; */
+    flex: 1;
+
+    padding: var(--space-3) var(--space-3);
+}
+
+.achievement__value{
+    color: var(--gray-900);
+
+    font-family: var(--font-archivo);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-5xl);
+    line-height: var(--lh-100);
+}
+
+.achievement__label{
+    color: var(--color-primary);
+
+    font-family: var(--font-archivo);
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-xl);
+    line-height: var(--lh-300);
+    text-align: center;
+}
+
+/* media screens */
+
+@media (min-width: 25rem){
+
+/* Achievements section */
+
+.achievements__content{
+    min-height: 17rem;
+}
+
+.achievement__item{
+    padding: var(--space-4) var(--space-4);
+}
+
+.achievement__value{
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-6xl);
+}
+
+.achievement__label{
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-2xl);
+    line-height: var(--lh-400);
+}
+
+}
+
+@media (min-width: 36rem) {
+
+.achievements__content{
+    /* margin: 0 var(--space-6); */
+    width: 80%;
+    min-height: 18rem;
+}
+
+.achievement__value{
+    font-size: var(--font-size-7xl);
+}
+
+.achievement__label{
+    font-weight: var(--font-medium);
+}
+
+}
+
+@media (min-width: 48rem) {
+
+/* Achievements section */
+
+.achievements__content{
+    gap: 2px;
+    min-height: 20rem;
+}
+
+/* Achievement Card */
+
+.achievement__item{
+    gap: var(--space-0);
+}
+
+.achievement__value{
+    font-size: var(--font-size-9xl);
+}
+
+.achievement__label{
+    line-height: var(--lh-500);
+}
+
+}
+
+@media (min-width: 64rem) {
+
+}
+
+@media (min-width: 80rem) {
+
+}
+
+@media (min-width: 96rem) {
+
+}

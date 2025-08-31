@@ -1,0 +1,53 @@
+/* Tech Firms Section */
+
+.tech-firm-section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+}
+
+.tech-firms__brief{
+    width: 80%;
+    font-family: var(--font-archivo);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-medium);
+    line-height: var(--lh-500);
+    text-align: center;
+}
+
+.tech-firms__logo{
+    background-color: var(--white);
+    padding: var(--space-8);
+    overflow-x: auto;
+}
+
+.tech-firms__logo-list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--space-8);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    /* Hide scrollbar - Chrome, Safari */
+   scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* Internet Explorer 10+ */
+}
+
+.tech-firms__logo-list::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari, Edge */
+}
+
+.tech-firms__logo-list img {
+  max-height: var(--space-5) ;
+  height: auto;
+  width: auto;
+}
+
+.tech-firms__logo-list li {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+

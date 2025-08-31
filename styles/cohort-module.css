@@ -1,0 +1,445 @@
+/* Cohort module section */
+
+/* Intro */
+
+.intro{
+   width: 95%;
+   text-align: center;
+}
+
+.intro h2{
+   font-family: var(--font-archivo);
+   font-size: var(--font-size-6xl);
+   font-weight: var(--font-semi-bold);
+   line-height: var(--lh-200);
+   letter-spacing: var(--ls-4);
+}
+
+.intro p{
+   font-family: var(--font-inter);
+   font-size: var(--font-size-2xl);
+   font-weight: var(--font-extra-light);
+   line-height: var(--lh-400);
+   letter-spacing: var(--ls-3);
+   width: 92%;
+}
+
+
+
+.cohort-modules__intro{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+}
+
+/* Sections */
+
+.cohort-modules__section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-9);
+    align-items: center;
+    margin: 0 var(--space-6);
+}
+
+.cohort-modules__stack-section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.cohort-modules__stack{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+}
+
+.cohort-modules__stack-items{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    width: 100%;
+}
+
+.cohort-modules__stack-intro{
+    width: 100%;
+}
+
+
+/* Stack card */
+
+.cohort-modules__stack-item{
+    display: flex;
+    flex-direction: column;
+    gap: calc((var(--space-0)) * 3);
+
+    padding: var(--space-2);
+    padding-bottom: var(--space-4);
+
+    border-radius: var(--border-radius-4);
+    background-color: var(--white);
+    min-height: 35rem;
+    height: 100%;
+}
+
+.cohort-modules__stack-tag{
+    /* flex: 0 0 auto; */
+    /* width: max-content; */
+    align-self: flex-start;
+    border-radius: var(--border-radius-4);
+    padding: var(--space-0) var(--space-1);
+    
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-semi-bold);
+    line-height: var(--lh-200);
+}
+
+.cohort-modules__stack-tag--green{
+    color: var(--color-accent-green);
+    background-color: var(--color-accent-green-soft);
+    border: 0.5px solid var(--color-accent-green);
+}
+
+.cohort-modules__stack-tag--orange{
+    color: var(--color-accent-orange);
+    background-color: var(--color-accent-orange-soft);
+    border: 0.5px solid var(--color-accent-orange);
+}
+
+.cohort-modules__stack-tag--blue{
+    color: var(--color-accent-blue);
+    background-color: var(--color-accent-blue-soft);
+    border: 0.5px solid var(--color-accent-blue);
+}
+
+.cohort-modules__stack-tag--purple{
+    color: var(--color-accent-purple);
+    background-color: var(--color-accent-purple-soft);
+    border: 0.5px solid var(--color-accent-purple);
+}
+
+.cohort-modules__week-label{
+    color: var(--gray-600);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-base);
+    line-height: var(--lh-250);
+    margin: var(--space-0);
+}
+
+.cohort-modules__title{
+    color: var(--gray-900);
+    font-family: var(--font-archivo);
+    font-size: var(--font-size-2xl);
+    line-height: var(--lh-400);
+    letter-spacing: var(--ls-2);
+}
+
+.cohort-modules__topics{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+
+}
+
+.cohort-modules__topic{
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.cohort-modules__topic p{
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-regular);
+    line-height: var(--lh-300);
+    letter-spacing: var(--ls-3);
+    color: var(--gray-600);
+}
+
+/* Stack intro card */
+
+.cohort-modules__stack-intro{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-2);
+    padding-bottom: var(--space-6);
+    background-color: var(--gray-800);
+    border-radius: var(--border-radius-8);
+
+    background:
+    /* Soft top‑left glow */
+    radial-gradient(
+      circle 300px at left top,
+      rgba(254,227,175,0.1) 0%,
+      transparent 80%
+    ),
+    /* Broad golden swoosh bottom‑right */
+    radial-gradient(
+      ellipse 250% 200% at 110% 120%,
+      rgba(254,227,175,0.5) 10%,
+      rgba(255,172,14,0.2) 30%,
+      rgba(0,0,0,0.3) 60%,
+      transparent 90%
+    ),
+    /* 2) Frosted‑glass overlay */
+    rgba(255,255,255,0.08);
+
+  /* 3) Glassmorphism essentials */
+  /* border-radius: 16px; */
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* 4) Depth */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+
+}
+
+.cohort-modules__weekly-duration{
+    font-family: var(--font-inter);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-medium);
+    line-height: var(--lh-250);
+    color: var(--gray-200);
+}
+
+.cohort-modules__module-label{
+    font-family: var(--font-archivo);
+    font-size: var(--font-size-7xl);
+    font-weight: var(--font-semi-bold);
+    line-height: var(--lh-200);
+}
+
+.cohort-modules__module-description{
+    font-family: var(--font-archivo);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-extra-light);
+    line-height: var(--lh-400);
+    letter-spacing: var(--ls-6);
+    color: var(--gray-50);
+    width: 90%;
+}
+
+
+
+
+@media (min-width: 25rem){
+/* 400px to 576px */
+
+/* Cohort module section */
+
+/* Intro */
+
+.intro{
+   width: 90%;
+}
+
+.intro h2{
+   font-size: var(--font-size-7xl);
+}
+
+.intro p{
+   font-size: var(--font-size-2xl);
+   width: 90%;
+}
+
+
+/* Sections */
+
+
+.cohort-modules__stack-items{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* Stack card */
+
+.cohort-modules__stack-item{
+    padding: var(--space-2);
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-5);
+    min-height: 42rem;
+}
+
+
+.cohort-modules__stack-tag{
+    font-size: var(--font-size-base);
+    font-weight: var(--font-bold);
+    line-height: var(--lh-100);
+}
+
+
+.cohort-modules__week-label{
+    font-size: var(--font-size-md);
+}
+
+.cohort-modules__title{
+    font-size: var(--font-size-3xl);
+}
+
+
+
+.cohort-modules__topic p{
+    font-size: var(--font-size-lg);
+    line-height: var(--lh-400);
+}
+
+/* Stack intro card */
+
+.cohort-modules__stack-intro{
+    padding: var(--space-3);
+    padding-bottom: var(--space-10);
+}
+
+.cohort-modules__weekly-duration{
+    font-size: var(--font-size-2xl);
+}
+
+.cohort-modules__module-label{
+    font-size: var(--font-size-8xl);
+}
+
+.cohort-modules__module-description{
+    font-size: var(--font-size-xl);
+}
+
+
+}
+
+@media (min-width: 36rem) {
+/* 576px to 768px */
+
+}
+
+@media (min-width: 48rem) {
+/* 768px to 1024px */
+
+}
+
+@media (min-width: 64rem) {
+
+/* Cohort module section */
+
+/* Intro */
+
+.intro{
+   width: 80%;
+}
+
+.intro h2{
+   font-size: var(--font-size-7xl);
+   font-weight: var(--font-bold);
+   letter-spacing: var(--ls-3);
+}
+
+.intro p{
+   font-weight: var(--font-thin);
+   width: 90%;
+}
+
+
+/* Sections */
+
+.cohort-modules__section{
+    margin: 0 var(--space-6);
+}
+
+
+.cohort-modules__stack{
+    flex-direction: row;
+}
+
+.stack--1, .stack--3{
+    flex-direction: row-reverse;
+}
+
+.cohort-modules__stack-items{
+    width: 67%;
+}
+
+.cohort-modules__stack-intro{
+    width: 33%;
+}
+
+
+/* Stack card */
+
+.cohort-modules__stack-item{
+    gap: var(--space-1);
+    padding: var(--space-2);
+    border-radius: var(--border-radius-8);
+    min-height: 32rem;
+    height: 100%;
+}
+
+.cohort-modules__stack-tag{
+    border-radius: var(--border-radius-16);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-bold);
+    line-height: normal;
+} 
+
+
+.cohort-modules__week-label{
+    font-size: var(--font-size-xs);
+}
+
+.cohort-modules__title{
+    font-size: var(--font-size-xl);
+    line-height: var(--lh-200);
+    letter-spacing: var(--ls-2);
+}
+
+
+.cohort-modules__topic{
+    gap: calc((var(--space-0)) * 3);
+}
+
+.cohort-modules__topic p{
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-regular);
+    line-height: var(--lh-200);
+}
+
+/* Stack intro card */
+
+.cohort-modules__stack-intro{
+    padding: var(--space-2);
+    border-radius: var(--border-radius-10);
+}
+
+
+.cohort-modules__module-label{
+    font-size: var(--font-size-7xl);
+    line-height: var(--lh-100);
+}
+
+.cohort-modules__module-description{
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-light);
+    line-height: var(--lh-400);
+    letter-spacing: var(--ls-4);
+    color: var(--gray-100);
+    width: 90%;
+}
+
+}
+
+@media (min-width: 80rem) {
+
+    .cohort-modules__section{
+    margin: 0 var(--space-8);
+}
+}
+
+@media (min-width: 96rem) {
+
+    .cohort-modules__section{
+    margin: 0 var(--space-10);
+}
+}

@@ -1,0 +1,483 @@
+/* Learning Outcomes */
+
+.learning__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 var(--space-6);
+    gap: var(--space-9);
+}
+
+.learning__intro{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+}
+
+.learning__schedule-frame{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+    padding: var(--space-6) var(--space-2);
+    background-color: var(--gray-800);
+    border-radius: var(--border-radius-8);
+}
+
+
+.learning__schedule-item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.learning__schedule-icon{
+    width: var(--space-10);
+    height: var(--space-10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-8);
+    background-color: var(--gray-900);
+}
+
+.learning__schedule-icon img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.learning__schedule-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-0);
+    align-items: center;
+}
+
+.learning__schedule-info h4{
+    font-family: var(--font-archivo);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-xl);
+    line-height: var(--lh-250);
+}
+
+.learning__schedule-info p{
+    font-family: var(--font-inter);
+    font-weight: var(--font-light);
+    font-size: var(--font-size-base);
+    line-height: var(--lh-300);
+    letter-spacing: var(--ls-2);
+    color: var(--gray-150);
+    /* text-align: center; */
+}
+
+.learning__schedule-info p span{
+    margin-left: var(--space-1);
+    color: var(--white);
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-sm);
+}
+
+/* -------------------------------------- */
+/* weekly learning cards */
+
+.learning__weekly-learnings{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    /* margin: 0 var(--space-4); */
+}
+
+/* Learning Card */
+
+
+.learning__card{
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-8);
+    gap: var(--space-4);
+    background-color: var(--white);
+    color: black;
+}
+
+.learning__card-short{
+    padding: var(--space-4) var(--space-2);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-8);
+    gap: var(--space-4);
+    background-color: var(--white);
+    color: black;
+}
+
+
+.learning__card-title{
+    display: flex;
+    flex-direction: column;
+    gap: calc((var(--space-0)) * 3);
+}
+
+.learning__card-label{
+    font-family: var(--font-inter);
+    font-weight: var(--font-light);
+    font-size: var(--font-size-lg);
+    line-height: var(--lh-400);
+    letter-spacing: var(--ls-2);
+    color: var(--gray-500);
+}
+
+.learning__card-title-bundle{
+    display: flex;
+    gap: calc((var(--space-0)) * 5);
+}
+
+.learning__card-icon{
+    width: var(--space-9);
+    height: var(--space-9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-8);
+    background-color: var(--color-primary-softer);
+}
+
+.learning__card-icon img{
+    width: 50%;
+    height: auto;
+}
+
+.learning__card-title-bundle h3{
+    font-family: var(--font-archivo);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-4xl);
+    line-height: var(--lh-250);
+    color: var(--gray-700);
+}
+
+.learning__session-tag{
+    /* flex: 0 0 auto; */
+    /* width: max-content; */
+    align-self: flex-start;
+    border-radius: 2px;
+    padding: var(--space-0) var(--space-1);
+    padding-top: calc(var(--space-0) + 0.1rem);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-semi-bold);
+}
+
+
+.learning__session-tag--orange{
+    color: var(--color-accent-orange);
+    background-color: var(--color-accent-orange-soft);
+    border: 0.5px solid var(--color-accent-orange);
+}
+
+.learning__session-tag--blue{
+    color: var(--color-accent-blue);
+    background-color: var(--color-accent-blue-soft);
+    border: 0.5px solid var(--color-accent-blue);
+}
+
+.learning__session-tag--purple{
+    color: var(--color-accent-purple);
+    background-color: var(--color-accent-purple-soft);
+    border: 0.5px solid var(--color-accent-purple);
+}
+
+.learning__outcomes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-0);
+}
+
+.learning__outcome-item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.learning__outcome-item p{
+    font-family: var(--font-archivo);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-medium);
+    line-height: var(--lh-100);
+    letter-spacing: var(--ls-2);
+    color: var(--gray-700);
+    width: 90%;
+    height: var(--space-6);
+}
+
+.learning__card--secondary{
+    display: flex;
+    gap: 1px;
+}
+
+/* -------------------------------------- */
+
+@media (min-width: 25rem){
+/* 400px to 576px */
+
+
+.learning__schedule-frame{
+    width: 100%;
+    gap: var(--space-3);
+    grid-template-columns: repeat(4, 1fr);
+    padding: var(--space-6) var(--space-0);
+}
+
+
+.learning__schedule-info{
+    text-align: center;
+}
+
+.learning__schedule-info p{
+    text-align: center;
+}
+
+/* -------------------------------------- */
+/* weekly learning cards */
+
+.learning__weekly-learnings{
+    margin: 0 10%;
+    gap: var(--space-3);
+}
+
+.learning__card{
+    padding: var(--space-5) var(--space-4);
+}
+
+.learning__card-short{
+    padding: var(--space-5) var(--space-2);
+}
+
+.learning__card-title{
+    gap: var(--space-3);
+}
+
+.learning__card-label{
+    font-size: var(--font-size-xl);
+}
+
+.learning__card-title-bundle{
+    gap: calc((var(--space-0)) * 4);
+}
+
+.learning__card-icon{
+    width: var(--space-10);
+    height: var(--space-10);
+}
+
+.learning__card-title-bundle h3{
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-5xl);
+}
+
+.learning__session-tag{
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-bold);
+}
+
+.learning__outcome-item p{
+    font-size: var(--font-size-md);
+}
+
+
+
+}
+
+/* -------------------------------------- */
+
+@media (min-width: 36rem) {
+/* 576px to 768px */
+
+
+
+.learning__schedule-frame{
+    gap: var(--space-2);
+    padding: var(--space-6) var(--space-1);
+    border-radius: var(--border-radius-10);
+}
+
+
+.learning__card{
+    padding: var(--space-6);
+}
+
+.learning__card-short{
+    padding: var(--space-6) var(--space-2);
+}
+
+
+}
+
+/* -------------------------------------- */
+
+
+@media (min-width: 48rem) {
+/* 768px to 1024px */
+
+
+
+.learning__schedule-item{
+    flex-direction: row;
+    gap: var(--space-2);
+}
+
+.learning__schedule-frame{
+    padding: var(--space-6) var(--space-2);
+}
+
+.learning__schedule-icon{
+    min-width: var(--space-9);
+    min-height: var(--space-9);
+}
+
+.learning__schedule-icon img{
+    width: 40%;
+    height: 40%;
+}
+
+
+.learning__schedule-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.learning__schedule-info h4{
+    text-align: left;
+}
+
+.learning__schedule-info p{
+    text-align: left;
+}
+
+/* ------------------------------ */
+.learning__weekly-learnings{
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+    margin: 0;
+}
+
+/* Learning Card */
+
+
+.learning__card{
+    padding: var(--space-4);
+    border-radius: var(--border-radius-10);
+}
+
+.learning__card-short{
+    padding: var(--space-4) var(--space-2);
+    border-radius: var(--border-radius-10);
+}
+
+
+.learning__card-title{
+    gap: calc((var(--space-0)) * 3);
+}
+
+.learning__card-label{
+    font-size: var(--font-size-lg);
+}
+
+.learning__card-title-bundle{
+    gap: calc((var(--space-0)) * 5);
+}
+
+.learning__card-icon{
+    width: var(--space-9);
+    height: var(--space-9);
+    border-radius: var(--border-radius-10);
+}
+
+.learning__card-title-bundle h3{
+    font-size: var(--font-size-4xl);
+}
+
+.learning__session-tag{
+    border-radius: 4px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-semi-bold);
+}
+
+
+.learning__outcome-item p{
+    font-size: var(--font-size-base);
+}
+
+}
+
+/* -------------------------------------- */
+
+
+@media (min-width: 64rem) {
+/* 1024px to 1280px */
+
+.learning__schedule-frame{
+    width: 95%;
+    padding: var(--space-6) var(--space-3);
+}
+
+.learning__schedule-icon{
+    width: var(--space-5);
+    height: var(--space-5);
+}
+
+.learning__schedule-icon img{
+    width: 40%;
+    height: 40%;
+}
+
+.learning__schedule-info h4{
+    font-size: var(--font-size-md);
+    line-height: var(--lh-200);
+}
+
+/* weekly learning cards */
+
+.learning__weekly-learnings{
+    margin: 0 var(--space-4);
+}
+
+.learning__card{
+    padding: var(--space-3);
+    gap: var(--space-2);
+}
+
+.learning__card-short{
+    padding: var(--space-2);
+    gap: var(--space-2);
+}
+
+}
+
+/* -------------------------------------- */
+
+
+@media (min-width: 80rem) {
+
+.learning__schedule-frame{
+    width: 90%;
+}
+
+.learning__schedule-icon{
+    width: var(--space-3);
+    height: var(--space-3);
+}
+
+
+
+}
+
+/* -------------------------------------- */
+
+
+@media (min-width: 96rem) {
+
+}

@@ -1,0 +1,193 @@
+/* Community section */
+
+.community__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 var(--space-6); 
+    gap: var(--space-9);
+}
+
+.community__intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.community__segment{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.community__item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+
+.community__title{
+    padding: var(--space-4);
+    border-radius: var(--border-radius-8);
+
+    font-family: var(--font-archivo);
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-6xl);
+    line-height: var(--lh-100);
+    min-height: 16rem;
+    text-align: center;
+
+    background:
+    /* Soft top‑left glow */
+    radial-gradient(
+      circle 300px at left top,
+      rgba(254,227,175,0.1) 0%,
+      transparent 80%
+    ),
+    /* Broad golden swoosh bottom‑right */
+    radial-gradient(
+      ellipse 250% 200% at 110% 120%,
+      rgba(254,227,175,0.5) 10%,
+      rgba(255,172,14,0.2) 30%,
+      rgba(0,0,0,0.3) 60%,
+      transparent 90%
+    ),
+    /* 2) Frosted‑glass overlay */
+    rgba(255,255,255,0.08);
+
+  /* 3) Glassmorphism essentials */
+  /* border-radius: 16px; */
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* 4) Depth */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+
+}
+
+.community__snap{
+      height: 35rem;
+      width: 100%;
+      overflow: hidden;
+}
+
+
+.community__snap img{
+    border-radius: var(--border-radius-10);
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* or contain based on need */
+    object-position: center; /* Centers image when cropped */
+}
+
+
+
+
+@media (min-width: 25rem){
+/* 400px to 576px */
+
+.community__segment{
+    gap: var(--space-5);
+}
+
+.community__item{
+    gap: var(--space-3);
+}
+
+.community__title{
+    min-height: auto;
+    font-size: var(--font-size-7xl);
+}
+
+.community__snap{
+      height: 40rem;
+}
+
+}
+
+@media (min-width: 36rem) {
+/* 576px to 768px */
+
+.community__item{
+    flex-direction: row;
+    gap: var(--space-3);
+}
+
+.community__item--2{
+  flex-direction: row-reverse;
+}
+
+
+.community__title{
+    width: 35%;
+    padding: var(--space-2);
+    border-radius: var(--border-radius-10);
+    font-size: var(--font-size-6xl);
+    line-height: var(--lh-200);
+    text-align: left;
+}
+
+.community__snap{
+      height: 35rem;
+      width: 65%;
+      overflow: hidden;
+}
+
+.community__snap{
+      height: 40rem;
+}
+
+}
+
+@media (min-width: 48rem) {
+/* 768px to 1024px */
+
+.community__section{
+    margin: 0 var(--space-10); 
+}
+
+.community__item{
+    gap: var(--space-4);
+}
+
+.community__title{
+    width: 38%;
+    border-radius: var(--border-radius-10);
+    font-size: var(--font-size-7xl);
+}
+
+.community__snap{
+      height: 38rem;
+      width: 72%;
+}
+}
+
+@media (min-width: 64rem) {
+
+.community__section{
+    margin: 0 var(--space-lg); 
+}
+
+  .community__snap{
+      height: 40rem;
+      width: 72%;
+}
+
+}
+
+@media (min-width: 80rem) {
+  .community__section{
+    margin: 0 var(--space-12); 
+}
+}
+
+@media (min-width: 96rem) {
+
+.community__section{
+    margin: 0 var(--space-20); 
+}
+
+}

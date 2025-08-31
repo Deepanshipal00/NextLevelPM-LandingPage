@@ -1,0 +1,271 @@
+/* Mentor Section */
+
+.mentors__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-9);
+    margin: 0 var(--space-6); 
+}
+
+.mentors__intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.mentors-list{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.mentors-row{
+    display: grid;
+    gap: var(--space-2);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Mentors Profile */
+
+.mentors__profile{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-0);
+}
+
+.mentors__image{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.mentors__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-8);
+}
+
+.mentors__details{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-2) 0;
+}
+
+.mentors__bio{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-0);
+}
+
+.mentors__bio-part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mentors__bio-part h3{
+    font-family: var(--font-archivo);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-2xl);
+    line-height: var(--lh-200);    
+}
+
+.mentors__designation{
+    font-family: var(--font-inter);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-light);
+    line-height: var(--lh-200);
+    min-height: 3rem;
+}
+
+.mentors__designation span{
+    font-weight: var(--font-medium);
+}
+
+.mentors__companies img{
+    width: auto;
+    height: 4rem;
+}
+
+.mentors__bio-part img{
+    width: auto;
+    height: 2rem;
+}
+
+
+
+@media (min-width: 25rem){
+/* 400px to 576px */
+.mentors__section{
+    margin: 0 var(--space-7); 
+}
+
+/* Mentors Profile */
+
+.mentors__profile{
+    padding: var(--space-2);
+}
+
+.mentors__details{
+    padding: var(--space-2) 0;
+}
+
+.mentors__bio-part h3{
+    font-size: var(--font-size-3xl);
+}
+
+.mentors__designation{
+    font-size: var(--font-size-md);
+    min-height: 2rem;
+}
+
+.mentors__companies img{
+    width: auto;
+    height: 4rem;
+}
+
+.mentors__bio-part img{
+    width: auto;
+    height: 3rem;
+}
+
+}
+
+@media (min-width: 36rem) {
+/* 576px to 768px */
+.mentors__section{
+    margin: 0 var(--space-10); 
+}
+
+/* Mentors Profile */
+
+.mentors__profile{
+    padding: var(--space-3);
+}
+
+.mentors__details{
+    padding: var(--space-2) 0;
+}
+
+.mentors__bio-part h3{
+    font-size: var(--font-size-4xl);
+}
+
+.mentors__designation{
+    font-size: var(--font-size-lg);
+    min-height: 2rem;
+}
+
+.mentors__companies img{
+    width: auto;
+    height: 5rem;
+}
+
+.mentors__bio-part img{
+    width: auto;
+    height: 3rem;
+}
+
+}
+
+@media (min-width: 48rem) {
+/* 768px to 1024px */
+
+.mentors__section{
+    margin: 0 var(--space-8); 
+}
+
+.mentors-list{
+    gap: var(--space-2);
+}
+
+.mentors-row{
+    gap: var(--space-2);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mentors__details{
+    padding: var(--space-2) 0;
+}
+
+.mentors__profile{
+    padding: var(--space-1);
+}
+
+.mentors__bio-part h3{
+    font-size: var(--font-size-3xl);
+}
+
+.mentors__designation{
+    font-size: var(--font-size-md);
+    min-height: 2rem;
+}
+
+.mentors__companies img{
+    width: auto;
+    height: 4rem;
+}
+
+.mentors__bio-part img{
+    height: 2.5rem;
+}
+
+
+}
+
+@media (min-width: 64rem) {
+.mentors__section{
+    margin: 0 var(--space-10); 
+}
+
+.mentors-row{
+    gap: var(--space-1);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.mentors__profile{
+    padding: var(--space-1);
+}
+
+.mentors__details{
+    padding: var(--space-2) 0;
+}
+
+.mentors__bio-part h3{
+    font-size: var(--font-size-xl);
+}
+
+.mentors__designation{
+    font-size: var(--font-size-sm);
+    min-height: 2rem;
+}
+
+.mentors__companies img{
+    width: auto;
+    height: 3rem;
+}
+
+.mentors__bio-part img{
+    height: 2rem;
+}
+
+
+}
+
+@media (min-width: 80rem) {
+
+.mentors__section{
+    margin: 0 var(--space-lg); 
+}
+}
+
+@media (min-width: 96rem) {
+.mentors__section{
+    margin: 0 var(--space-20); 
+}
+}
+
