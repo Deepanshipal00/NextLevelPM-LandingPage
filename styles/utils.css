@@ -127,27 +127,7 @@
 
 /* BEM Utitlity Classes */
 
-.intro{
-   width: 70%;
-   text-align: center;
-}
 
-.intro h2{
-   font-family: var(--font-archivo);
-   font-size: var(--font-size-8xl);
-   font-weight: var(--font-extra-bold);
-   line-height: var(--lh-100);
-   letter-spacing: var(--ls-4);
-}
-
-.intro p{
-   font-family: var(--font-inter);
-   font-size: var(--font-size-2xl);
-   font-weight: var(--font-extra-light);
-   line-height: var(--lh-500);
-   letter-spacing: var(--ls-3);
-   width: 85%;
-}
 
 .break{
     width: 1px;
