@@ -113,7 +113,6 @@
 }
 
 html{
-    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -139,3 +138,35 @@ ul, ol{
     list-style: none;
     padding: 0;
 }
+
+/* 
+
+
+@media (min-width: 25rem){
+
+
+
+@media (min-width: 36rem) {
+
+}
+
+@media (min-width: 48rem) {
+
+}
+
+@media (min-width: 64rem {
+
+}
+
+@media (min-width: 80rem) {
+
+}
+
+@media (min-width: 96rem) {
+
+}
+
+
+
+
+*/
