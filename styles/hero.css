@@ -14,6 +14,10 @@
     gap: var(--space-3);
     align-items: center;
     margin: 0 6rem;
+
+    transform: translateY(10%);
+    opacity: 0;
+    transition: 1000ms;
 }
 
 .hero__heading{
@@ -22,6 +26,7 @@
     line-height: var(--lh-100);
     -webkit-text-stroke: 0.1rem var(--white);
     text-align: center;
+
 }
 
 .hero__heading--outline{
@@ -51,6 +56,14 @@
     position: absolute;
     z-index: 0;
     overflow: hidden;
+    transform: translateY(-30%);
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .hero__illustration--center{

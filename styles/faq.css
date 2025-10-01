@@ -24,12 +24,42 @@
 
 .faq__card{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: var(--space-3);
     border-radius: var(--border-radius-4);
     border: 1px solid var(--color-primary-stroke);
 }
+
+.faq__pair{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-1);
+}
+
+.faq__answer{
+    display: none;
+
+}
+
+.faq__answer p{
+    font-family: var(--font-archivo);
+    font-weight: 200;
+    font-size: var(--font-size-md);
+    line-height: var(--lh-500);
+    letter-spacing: var(--ls-4);
+    color: var(--gray-400);
+    width: 92%;
+}
+
+.active{
+    display: block;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
 
 .faq__pair h4{
     font-family: var(--font-inter);
@@ -39,15 +69,12 @@
     letter-spacing: var(--ls-4);
 }
 
-.faq__pair p{
-    display: none;
-}
-
 .faq-icon{
     background: none;
     border: none;
     width: 3rem;
     height: 3rem;
+    transition: transform 0.5s ease-in-out;
 }
 
 .faq-icon img{ 

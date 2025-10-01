@@ -18,9 +18,41 @@
 .btn--primary{
     color: var(--white);
     background-color: var(--color-primary);
-    z-index: 9999;
+    z-index: 999;
     padding: calc((var(--space-0)) * 5) var(--space-6);
-    
+
+      /* Interaction enhancements */
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+
+  box-shadow: 0 2px 6px rgba(251, 205, 112, 0.25);
+}
+
+
+.btn--primary:hover {
+  background-color: #ffa012;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn--primary:focus {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.btn--primary:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #ffa012;
+}
+
+.btn--primary:disabled {
+  background-color: #444;
+  color: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
 /* Secondary Button */
@@ -29,10 +61,40 @@
     color: var(--white);
     background-color: var(--gray-900);
     padding: calc((var(--space-0)) * 5);
+
+    transition:
+    background-color 0.3s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease,
+    border-color 0.3s ease;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+.btn--secondary:hover {
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
 
+.btn--secondary:focus {
+  outline: 1px solid #2e2e2e;
+  outline-offset: 1px;
+}
 
+.btn--secondary:active {
+  background-color: #2e2e2e;
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Disabled */
+.btn--secondary:disabled {
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
 
 
 

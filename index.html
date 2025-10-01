@@ -1,135 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Next Level PM</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="navbar u-mb-100">
-      <!-- navbar -->
-      <div class="navbar__container">
-        <div class="navbar__logo">
-          <a href="/"
-            ><img src="assets/images/logo.jpg" alt="Next Level PM Logo"
-          /></a>
-        </div>
 
-        <nav aria-label="Main site navigation">
-          <ul class="navbar__menu">
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Hire From Us</a></li>
-          </ul>
-        </nav>
+<head>
+
+  <!-- Primary meta data -->
+   <title>Next Level PM | Product Management Cohort with 100% Placement Support</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Next Level PM – an immersive, experience-based Product Management cohort. 80 hours of deep content, 40+ live sessions, 7+ case studies, and real projects to build a standout portfolio. Learn from expert mentors, access a powerful PM community, and get 100% placement support in top tech companies.">
+  <meta name="keywords" content="Product Management course, PM cohort, Product Manager training, PM bootcamp, product management placement, live PM sessions, product case studies, PM mentorship, product management community">
+  <meta name="author" content="Next Level PM">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+    <link rel="icon" href="assets/images/Design.jpg" type="image/jpg">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar sticky">
+    <!-- navbar -->
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <a href="/"><img src="assets/images/logo.jpg" alt="Next Level PM Logo" /></a>
       </div>
-    </header>
 
-    <!-- Main Sections -->
-    <main>
-      <!-- Hero section -->
-      <section class="hero u-mb-72" role="banner">
-        <div class="hero__container">
-          <div class="hero__content">
-            <h1 class="hero__heading">
-              <span class="hero__heading--outline"
-                >Unlock Your Product Management Potential </span
-              ><br />
-              <span class="hero__heading--solid"
-                >with proven Roadmap <br/> and Resources</span
-              >
-            </h1>
+      <nav aria-label="Main site navigation">
+        <ul class="navbar__menu">
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#mentors">Mentors</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+      <button class="navbar__hamburger" aria-label="Hamburger button">
+        <img src="assets/images/hamburger-icon.png" alt="" srcset="">
+        </button>
+    </div>
+  </header>
+  <div class = "navbar__overlay hidden"></div>
+  <nav class = "navbar__mobile">
 
-            <p class="hero__paragraph">
-              Gain Essential Skills, Build Real Products, and Land Your Dream
-              Job as a Product Manager
-            </p>
-          </div>
+        <ul>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#mentors">Mentors</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
 
-          <button class="btn btn--primary"
-            aria-label="Apply for Product Management Program"
-          >
-            Apply Now
-          </button>
-          
-          <img class="hero__illustration hero__illustration--center" src="assets/illustrations/main_section/Ellipse.svg" alt="" aria-hidden = "true">
-          
-          <img
-          class="hero__illustration hero__illustration--left"
+  </nav>
+
+
+  <!-- Main Sections -->
+  <main>
+    <!-- Hero section -->
+    <section class="hero u-mu-220" role="banner">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            <span class="hero__heading--outline">Unlock Your Product Management Potential </span><br />
+            <span class="hero__heading--solid">with proven Roadmap <br /> and Resources</span>
+          </h1>
+
+          <p class="hero__paragraph">
+            Gain Essential Skills, Build Real Products, and Land Your Dream
+            Job as a Product Manager
+          </p>
+        </div>
+
+        <button onclick="window.location.href='enrollment.html'" class="btn btn--primary" aria-label="Apply for Product Management Program">
+          Apply Now
+        </button>
+
+        <img class="hero__illustration hero__illustration--center" src="assets/illustrations/main_section/Ellipse.svg"
+          alt="" aria-hidden="true">
+
+        <img class="hero__illustration hero__illustration--left"
           src="assets/illustrations/main_section/illustration_0.svg"
-          alt="Visual showing product management growth with three ascending bar icons"
-          />
-          <img
-          class="hero__illustration hero__illustration--right"
+          alt="Visual showing product management growth with three ascending bar icons" />
+        <img class="hero__illustration hero__illustration--right"
           src="assets/illustrations/main_section/illustration_1.svg"
-          alt="Product management process illustration with user, tool, and finance icons around a circular workflow"
-          />
+          alt="Product management process illustration with user, tool, and finance icons around a circular workflow" />
+      </div>
+    </section>
+
+    <!-- Achievements section -->
+
+    <section class="achievements u-mu-72">
+      <div class="achievements__content">
+        <div class="achievement__item u-br-l-10">
+          <div class="achievement__value">20+</div>
+          <div class="achievement__label">Successful Cohorts</div>
         </div>
-      </section>
+        <div class="achievement__item">
+          <div class="achievement__value">18 LPA</div>
+          <div class="achievement__label">Average CTC</div>
+        </div>
+        <div class="achievement__item u-br-r-10">
+          <div class="achievement__value">250+</div>
+          <div class="achievement__label">Skilled Professionals</div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Achievements section -->
+   
+    <!-- Tech firms section -->
+    <section class="tech-firms u-mu-180">
+      <div class="tech-firm-section">
+        <p class="tech-firms__brief">
+          Join our community of successful professionals at leading tech firms.
+        </p>
+        <div class="tech-firms__logo">
+          <ul class="tech-firms__logo-list ">
+            <li>
+              <img src="assets/images/tech-firms/logo_1.png" alt="Amazon logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_2.png" alt="Microsoft logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_3.png" alt="Phone Pe logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_4.png" alt="Adobe logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_5.png" alt="Razor Pay logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_6.png" alt="Blue Learn logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_7.png" alt="JP Morgan Chase & Co Logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_8.png" alt="Wells Fargo logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_9.png" alt="Airbus logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_10.png" alt="Axis bank logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_11.png" alt="Grappus logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_12.png" alt="Gojek logo" />
+            </li>
+            <li>
+              <img src="assets/images/tech-firms/logo_13.png" alt="Fampay logo" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <section class="achievements u-mb-180">
-        <div class="achievements__content">
-          <div class="achievement__item u-br-l-10">
-            <div class="achievement__value">20+</div>
-            <div class="achievement__label">Successful Cohorts</div>
+    <!-- Cohort Module section -->
+    <section id = "modules" class="cohort-modules u-mu-180">
+      <div class="cohort-modules__section">
+        <div class="cohort-modules__intro intro">
+          <h2>Explore more than 80 Hours of In-depth content</h2>
+          <p>
+            Curriculum that covers wide range of topics and offer in-depth
+            understanding with 40+ Live sessions and 7+ Case studies
+          </p>
+        </div>
+
+        <div class="cohort-modules__stack-section">
+          <!-- Stack 1 -->
+          <div class="cohort-modules__stack stack--1">
+            <div class="cohort-modules__stack-intro">
+              <span class="cohort-modules__weekly-duration">4 Weeks</span>
+              <h3 class="cohort-modules__module-label">Core Foundation</h3>
+              <p class="cohort-modules__module-description">
+                Master product management essentials : goals, research, solutions
+                & drive impactful outcomes!
+              </p>
+            </div>
+            <div class="cohort-modules__stack-items">
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
+                <span class="cohort-modules__week-label">Week 0</span>
+                <h3 class="cohort-modules__title">
+                  Strategic Product Management Insights
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>PM role mastery</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Myth disruption</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Success blueprint</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Product life cycle</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
+                <span class="cohort-modules__week-label">Week 1</span>
+                <h3 class="cohort-modules__title">
+                  Product Strategy Goals, Problems, Solutions
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Aligning business Goals</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Mastering problem analysis</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Strategic Product Mindset</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Problem & Solution Space</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Discover product potential</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
+                <span class="cohort-modules__week-label">Week 2</span>
+                <h3 class="cohort-modules__title">
+                  User Research Understand, Segment, Personify
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Design thinking</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>JTBD Framework Application</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>User Research Methods</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Personal Creation</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
+                <span class="cohort-modules__week-label">Week 3</span>
+                <h3 class="cohort-modules__title">
+                  Craft Innovative solutions Ideation, Validation, Design
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Ideation & Idea Validation</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Developing Solution Plans</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>User Flows and Journeys</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Collaborate with Designers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="achievement__item">
-            <div class="achievement__value">18 LPA</div>
-            <div class="achievement__label">Average CTC</div>
+
+          <!-- Stack 2 -->
+          <div class="cohort-modules__stack stack--2">
+            <div class="cohort-modules__stack-intro">
+              <span class="cohort-modules__weekly-duration">4 Weeks</span>
+              <h3 class="cohort-modules__module-label">Advance Concepts</h3>
+              <p class="cohort-modules__module-description">
+                Take your product skills to the next level with advanced concepts:
+                growth framework, metrics, tech essentials, and management
+                blueprint!
+              </p>
+            </div>
+
+            <div class="cohort-modules__stack-items">
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
+                <span class="cohort-modules__week-label">Week 4</span>
+                <h3 class="cohort-modules__title">
+                  Product Growth Framework & Execution
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Key growth insights</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>AARRR product metrics framework</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Iterative growth strategies</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Flywheel growth dynamics</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Product-driven growth execution</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
+                <span class="cohort-modules__week-label">Week 5</span>
+                <h3 class="cohort-modules__title">
+                  Product Success Metrics & Analysis
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>A/B testing techniques</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Metric analysis</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Event design strategies</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Analytics Tools</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Root cause analysis methods</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
+                <span class="cohort-modules__week-label">Week 6</span>
+                <h3 class="cohort-modules__title">
+                  Tech Essentials: Apps, APIs, System Design, SQL
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Internet Fundamentals</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Application Development Roadmap</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>APIs and Webhooks</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>System design & Architecture</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>SQL essentials for PMs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
+                <span class="cohort-modules__week-label">Week 7</span>
+                <h3 class="cohort-modules__title">
+                  Product Management Blueprint
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Objectives and Key Results (OKRs)</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Crafting Product Roadmaps</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Prioritization Techniques</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Product Requirement Documents (PRDs)</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Effective Stakeholder Managment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="achievement__item u-br-r-10">
-            <div class="achievement__value">250+</div>
-            <div class="achievement__label">Skilled Professionals</div>
+
+          <!-- Stack 3 -->
+          <div class="cohort-modules__stack stack--3">
+            <div class="cohort-modules__stack-intro">
+              <span class="cohort-modules__weekly-duration">3 Weeks</span>
+              <h3 class="cohort-modules__module-label">
+                Final Graduation Project
+              </h3>
+              <p class="cohort-modules__module-description">
+                Solve real-world problems for top tech companies and make a strong
+                portfolio with impactful case study
+              </p>
+            </div>
+
+
+            <div class="cohort-modules__stack-items">
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--blue">Create Product</span>
+                <span class="cohort-modules__week-label">Week 8</span>
+                <h3 class="cohort-modules__title">Define, Research, Plan</h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Define the problem statement</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Conduct market research</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Plan approaches to address the problem</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Initiate user research process</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--blue">Create Product</span>
+                <span class="cohort-modules__week-label">Week 9</span>
+                <h3 class="cohort-modules__title">
+                  Insights, Create, Prioritize
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Conduct User Research</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Turn research into insights</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Craft solutions</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Select and prioritize solutions</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--blue">Create Product</span>
+                <span class="cohort-modules__week-label">Week 10</span>
+                <h3 class="cohort-modules__title">Create, Showcase, Influence</h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Develop solution case study</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Emphasize strategy and benifits</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Present to mentors and product team</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Stack 4 -->
+          <div class="cohort-modules__stack stack--4">
+            <div class="cohort-modules__stack-intro">
+              <span class="cohort-modules__weekly-duration">2 Weeks</span>
+              <h3 class="cohort-modules__module-label">
+                Enhance Portfolio & Interview Skills
+              </h3>
+              <p class="cohort-modules__module-description">
+                Get interview-ready with expert guidance and elevate your
+                professional brand with a standout portfolio.
+              </p>
+            </div>
+
+            <div class="cohort-modules__stack-items">
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--purple">Interview Practice</span>
+                <span class="cohort-modules__week-label">Week 11</span>
+                <h3 class="cohort-modules__title">
+                  Professional Branding & Communication
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Linkedin Optimization</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Resume Optimization</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Effective outreach strategies</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Enhance product portfolio</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--purple">Interview Practice</span>
+                <span class="cohort-modules__week-label">Week 12</span>
+                <h3 class="cohort-modules__title">
+                  Prepare Interviews with Experts
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Mock Interviews with experts</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Peer Mock Interview</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Sample Interview Questions</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cohort-modules__stack-item">
+                <span class="cohort-modules__stack-tag cohort-modules__stack-tag--purple">Bonus Content</span>
+                <span class="cohort-modules__week-label">Bonus</span>
+                <h3 class="cohort-modules__title">
+                  Expert Advice & Other Resources
+                </h3>
+                <div class="cohort-modules__topics">
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Professional advice from experts</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Lifetime career support</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Access to all the interview sessions</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>1 Year placement support</p>
+                  </div>
+                  <div class="cohort-modules__topic">
+                    <img src="assets/images/bullet-point.png" alt="" aria-hidden="true" />
+                    <p>Case studies and other resources</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Enrollment-offer section -->
-      <section class="enrollment-offer u-mb-180">
-        <div class="enrollment-offer-section">
+     <!-- Enrollment-offer section -->
+    <section id = "pricing" class="enrollment-offer u-mu-180">
+      <div class="enrollment-offer-section">
         <div class="enrollment-offer__cta">
           <div class="enrollment-offer__launch">
             <div>
               <p class="enrollment-offer__label">Launching on</p>
               <p class="enrollment-offer__date">1 July 2025</p>
             </div>
-            <img
-              src="assets/illustrations/enrollment_section/Discount_icon.svg"
-              alt=""
-              aria-hidden="true"
-            />
+            <img src="assets/illustrations/enrollment_section/Discount_icon.svg" alt="" aria-hidden="true" />
           </div>
 
           <div class="enrollment-offer__pricing">
             <div>
-            <p class = "enrollment-offer__price-label">Price</p>
-            <div class = "u-flex u-ai-center u-gap-8">
-            <span class="enrollment-offer__price">30,000</span>
-            <span class="enrollment-offer__original-price">39,800</span>
+              <p class="enrollment-offer__price-label">Price</p>
+              <div class="u-flex u-ai-center u-gap-8">
+                <span class="enrollment-offer__price">30,000</span>
+                <span class="enrollment-offer__original-price">39,800</span>
+              </div>
             </div>
-            </div>
-            <p class = "enrollment-offer__alert">
+            <p class="enrollment-offer__alert">
               Hurry up! <br />
               Limited seats only
             </p>
           </div>
 
           <div class="enrollment-offer__cta-btn">
-            <button class = "btn btn--secondary">Get Access</button>
-            <div class = "enrollment-offer__time-left">
+            <button onclick="window.location.href='enrollment.html'" class="btn btn--secondary">Get Access</button>
+            <div class="enrollment-offer__time-left">
               <span>Entry will be closed soon.</span>
-              <span class = "u-fw-medium u-text-black">2 days left</span>
+              <span class="u-fw-medium u-text-black">2 days left</span>
             </div>
           </div>
         </div>
@@ -137,48 +655,32 @@
         <div class="enrollment-offer__benefits">
           <div class="benefit__card">
             <div class="benefit__icon-box">
-              <img
-                class="benefit__icon"
-                src="assets/illustrations/enrollment_section/benifits_section/benifits_1.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img class="benefit__icon" src="assets/illustrations/enrollment_section/benifits_section/benifits_1.png"
+                alt="" aria-hidden="true" />
             </div>
             <div class="benefit__description">40+ Live sessions</div>
           </div>
 
           <div class="benefit__card">
             <div class="benefit__icon-box">
-              <img
-                class="benefit__icon"
-                src="assets/illustrations/enrollment_section/benifits_section/benifits_2.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img class="benefit__icon" src="assets/illustrations/enrollment_section/benifits_section/benifits_2.png"
+                alt="" aria-hidden="true" />
             </div>
             <div class="benefit__description">7+ case studies</div>
           </div>
 
           <div class="benefit__card">
             <div class="benefit__icon-box">
-              <img
-                class="benefit__icon"
-                src="assets/illustrations/enrollment_section/benifits_section/benifits_3.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img class="benefit__icon" src="assets/illustrations/enrollment_section/benifits_section/benifits_3.png"
+                alt="" aria-hidden="true" />
             </div>
             <div class="benefit__description">Job opportunity</div>
           </div>
 
           <div class="benefit__card">
             <div class="benefit__icon-box">
-              <img
-                class="benefit__icon"
-                src="assets/illustrations/enrollment_section/benifits_section/benifits_4.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img class="benefit__icon" src="assets/illustrations/enrollment_section/benifits_section/benifits_4.png"
+                alt="" aria-hidden="true" />
             </div>
             <div class="benefit__description">
               Interview practice with mentors
@@ -187,1014 +689,38 @@
 
           <div class="benefit__card">
             <div class="benefit__icon-box">
-              <img
-                class="benefit__icon"
-                src="assets/illustrations/enrollment_section/benifits_section/benifits_5.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img class="benefit__icon" src="assets/illustrations/enrollment_section/benifits_section/benifits_5.png"
+                alt="" aria-hidden="true" />
             </div>
             <div class="benefit__description">Practical learning approach</div>
           </div>
 
           <div class="benefit__card">
             <div class="benefit__icon-box">
-              <img
-                class="benefit__icon"
-                src="assets/illustrations/enrollment_section/benifits_section/benifits_6.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img class="benefit__icon" src="assets/illustrations/enrollment_section/benifits_section/benifits_6.png"
+                alt="" aria-hidden="true" />
             </div>
             <div class="benefit__description">Access best tech community</div>
           </div>
         </div>
-        </div>
-      </section>
-
-      <!-- Tech firms section -->
-      <section class="tech-firms u-mb-180">
-        <div class = "tech-firm-section">
-        <p class="tech-firms__brief">
-          Join our community of successful professionals at leading tech firms.
-        </p>
-        <div class="tech-firms__logo">
-          <ul class="tech-firms__logo-list ">
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_1.png"
-                alt="Amazon logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_2.png"
-                alt="Microsoft logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_3.png"
-                alt="Phone Pe logo"
-              />
-            </li>
-            <li>
-              <img src="assets/images/tech-firms/logo_4.png" alt="Adobe logo" />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_5.png"
-                alt="Razor Pay logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_6.png"
-                alt="Blue Learn logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_7.png"
-                alt="JP Morgan Chase & Co Logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_8.png"
-                alt="Wells Fargo logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_9.png"
-                alt="Airbus logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_10.png"
-                alt="Axis bank logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_11.png"
-                alt="Grappus logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_12.png"
-                alt="Gojek logo"
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/tech-firms/logo_13.png"
-                alt="Fampay logo"
-              />
-            </li>
-          </ul>
-        </div>
-        </div>
-      </section>
-
-      <!-- Cohort Module section -->
-      <section class="cohort-modules u-mb-180">
-        <div class = "cohort-modules__section">
-        <div class="cohort-modules__intro intro">
-          <h2>Explore more than 80 Hours of In-depth content</h2>
-          <p>
-            Curriculum that covers wide range of topics and offer in-depth
-            understanding with 40+ Live sessions and 7+ Case studies
-          </p>
-        </div>
-        
-        <div class = "cohort-modules__stack-section">        
-        <!-- Stack 1 -->
-        <div class="cohort-modules__stack stack--1">
-            <div class="cohort-modules__stack-intro">
-            <span class="cohort-modules__weekly-duration">4 Weeks</span>
-            <h3 class="cohort-modules__module-label">Core Foundation</h3>
-            <p class="cohort-modules__module-description">
-              Master product management essentials : goals, research, solutions
-              & drive impactful outcomes!
-            </p>
-          </div>
-          <div class="cohort-modules__stack-items">
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
-              <span class="cohort-modules__week-label">Week 0</span>
-              <h3 class="cohort-modules__title">
-                Strategic Product Management Insights
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>PM role mastery</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Myth disruption</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Success blueprint</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Product life cycle</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
-              <span class="cohort-modules__week-label">Week 1</span>
-              <h3 class="cohort-modules__title">
-                Product Strategy Goals, Problems, Solutions
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Aligning business Goals</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Mastering problem analysis</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Strategic Product Mindset</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Problem & Solution Space</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Discover product potential</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
-              <span class="cohort-modules__week-label">Week 2</span>
-              <h3 class="cohort-modules__title">
-                User Research Understand, Segment, Personify
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Design thinking</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>JTBD Framework Application</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>User Research Methods</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Personal Creation</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--green">Foundation</span>
-              <span class="cohort-modules__week-label">Week 3</span>
-              <h3 class="cohort-modules__title">
-                Craft Innovative solutions Ideation, Validation, Design
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Ideation & Idea Validation</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Developing Solution Plans</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>User Flows and Journeys</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Collaborate with Designers</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Stack 2 -->
-        <div class="cohort-modules__stack stack--2">
-          <div class="cohort-modules__stack-intro">
-            <span class="cohort-modules__weekly-duration">4 Weeks</span>
-            <h3 class="cohort-modules__module-label">Advance Concepts</h3>
-            <p class="cohort-modules__module-description">
-              Take your product skills to the next level with advanced concepts:
-              growth framework, metrics, tech essentials, and management
-              blueprint!
-            </p>
-          </div>
-
-          <div class="cohort-modules__stack-items">
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
-              <span class="cohort-modules__week-label">Week 4</span>
-              <h3 class="cohort-modules__title">
-                Product Growth Framework & Execution
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Key growth insights</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>AARRR product metrics framework</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Iterative growth strategies</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Flywheel growth dynamics</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Product-driven growth execution</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
-              <span class="cohort-modules__week-label">Week 5</span>
-              <h3 class="cohort-modules__title">
-                Product Success Metrics & Analysis
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>A/B testing techniques</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Metric analysis</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Event design strategies</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Analytics Tools</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Root cause analysis methods</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
-              <span class="cohort-modules__week-label">Week 6</span>
-              <h3 class="cohort-modules__title">
-                Tech Essentials: Apps, APIs, System Design, SQL
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Internet Fundamentals</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Application Development Roadmap</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>APIs and Webhooks</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>System design & Architecture</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>SQL essentials for PMs</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--orange">Advanced</span>
-              <span class="cohort-modules__week-label">Week 7</span>
-              <h3 class="cohort-modules__title">
-                Product Management Blueprint
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Objectives and Key Results (OKRs)</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Crafting Product Roadmaps</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Prioritization Techniques</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Product Requirement Documents (PRDs)</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Effective Stakeholder Managment</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Stack 3 -->
-        <div class="cohort-modules__stack stack--3">
-          <div class="cohort-modules__stack-intro">
-            <span class="cohort-modules__weekly-duration">3 Weeks</span>
-            <h3 class="cohort-modules__module-label">
-              Final Graduation Project
-            </h3>
-            <p class="cohort-modules__module-description">
-              Solve real-world problems for top tech companies and make a strong
-              portfolio with impactful case study
-            </p>
-          </div>
+      </div>
+    </section>
 
 
-          <div class="cohort-modules__stack-items">
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--blue">Create Product</span>
-              <span class="cohort-modules__week-label">Week 8</span>
-              <h3 class="cohort-modules__title">Define, Research, Plan</h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Define the problem statement</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Conduct market research</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Plan approaches to address the problem</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Initiate user research process</p>
-                </div>
-              </div>
-            </div>
+    <!-- Features queue Section -->
+    <section class="feature-queue u-mu-100">
+      <ul class="feature-queue__list">
+        <li class="feature-queue__item">Experts mentorship</li>
+        <li class="feature-queue__item">Honest feedback</li>
+        <li class="feature-queue__item">Mock interviews</li>
+        <li class="feature-queue__item">Life time career support</li>
+      </ul>
+    </section>
 
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--blue">Create Product</span>
-              <span class="cohort-modules__week-label">Week 9</span>
-              <h3 class="cohort-modules__title">
-                Insights, Create, Prioritize
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Conduct User Research</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Turn research into insights</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Craft solutions</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Select and prioritize solutions</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--blue">Create Product</span>
-              <span class="cohort-modules__week-label">Week 10</span>
-              <h3 class="cohort-modules__title">Create, Showcase, Influence</h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Develop solution case study</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Emphasize strategy and benifits</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Present to mentors and product team</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Stack 4 -->
-        <div class="cohort-modules__stack stack--4">
-          <div class="cohort-modules__stack-intro">
-            <span class="cohort-modules__weekly-duration">2 Weeks</span>
-            <h3 class="cohort-modules__module-label">
-              Enhance Portfolio & Interview Skills
-            </h3>
-            <p class="cohort-modules__module-description">
-              Get interview-ready with expert guidance and elevate your
-              professional brand with a standout portfolio.
-            </p>
-          </div>
-
-          <div class="cohort-modules__stack-items">
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--purple">Interview Practice</span>
-              <span class="cohort-modules__week-label">Week 11</span>
-              <h3 class="cohort-modules__title">
-                Professional Branding & Communication
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Linkedin Optimization</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Resume Optimization</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Effective outreach strategies</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Enhance product portfolio</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--purple">Interview Practice</span>
-              <span class="cohort-modules__week-label">Week 12</span>
-              <h3 class="cohort-modules__title">
-                Prepare Interviews with Experts
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Mock Interviews with experts</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Peer Mock Interview</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Sample Interview Questions</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cohort-modules__stack-item">
-              <span class="cohort-modules__stack-tag cohort-modules__stack-tag--purple">Bonus Content</span>
-              <span class="cohort-modules__week-label">Bonus</span>
-              <h3 class="cohort-modules__title">
-                Expert Advice & Other Resources
-              </h3>
-              <div class="cohort-modules__topics">
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Professional advice from experts</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Lifetime career support</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Access to all the interview sessions</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>1 Year placement support</p>
-                </div>
-                <div class="cohort-modules__topic">
-                  <img
-                    src="assets/images/bullet-point.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>Case studies and other resources</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Features queue Section -->
-      <section class="feature-queue u-mb-100">
-          <ul class="feature-queue__list">
-          <li class="feature-queue__item">Experts mentorship</li>
-          <li class="feature-queue__item">Honest feedback</li>
-          <li class="feature-queue__item">Mock interviews</li>
-          <li class="feature-queue__item">Life time career support</li>
-          </ul>
-      </section>
-
-      <!-- Enrollment Section -->
-      <section class="enrollment u-mb-180">
-        <div class="enrollment-section">
-        <div class="enrollment__intro intro">
-          <h2>Enroll Now and Unlock Your Product Management Journey!</h2>
-          <p>Seamless Admission: Designed to Elevate Your Experience</p>
-        </div>
-
-        <div class="enrollment__highlights">
-          <div class="enrollment__highlight">
-            <p class="enrollment__header">Placement</p>
-            <p class="enrollment__detail">support for 1 Year</p>
-          </div>
-
-          <!-- <div class="enrollment__highlight-break break"></div> -->
-
-          <div class="enrollment__highlight">
-            <p class="enrollment__header">3 Months</p>
-            <p class="enrollment__detail">Course Duration</p>
-          </div>
-
-          <!-- <div class="enrollment__highlight-break break"></div> -->
-
-          <!-- <div class="enrollment__highlight">
-            <p class="enrollment__header">Rs.30,000</p>
-            <p class="enrollment__detail">Course Fee</p>
-          </div> -->
-
-          <!-- <div class="enrollment__highlight-break break"></div> -->
-
-          <div class="enrollment__highlight">
-            <p class="enrollment__header">Learn</p>
-            <p class="enrollment__detail">from Experts</p>
-          </div>
-
-          <!-- <div class="enrollment__highlight-break break"></div> -->
-
-          <div class="enrollment__highlight">
-            <p class="enrollment__header">Practical</p>
-            <p class="enrollment__detail">Learning Approach</p>
-          </div>
-        </div>
-
-        <div class="enrollment__action-form">
-          <ol class="enrollment__submission-steps">
-            <li>
-              <div class="enrollment__submission-step">
-                <div class="enrollment__step-icon-box enrollment__step-icon-box--stroke">
-                <img
-                  class = "enrollment__step-icon u-pl2"
-                  src="assets/illustrations/form_section/step1_logo.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                </div>
-                <div class="enrollment__step-details">
-                  <strong class="enrollment__step-num">Step 1</strong>
-                  <p class="enrollment__step-brief">Quick form submission</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="enrollment__submission-step">
-                <div class="enrollment__step-icon-box enrollment__step-icon-box--fill">
-                <img
-                  class = "enrollment__step-icon"
-                  src="assets/illustrations/form_section/step2_logo.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                </div>
-                <div class="enrollment__step-details">
-                  <strong class="enrollment__step-num">Step 2</strong>
-                  <p class="enrollment__step-brief">
-                    Individual session with founders
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="enrollment__submission-step">
-                <div class="enrollment__step-icon-box enrollment__step-icon-box--fill">
-                <img
-                  class = "enrollment__step-icon"
-                  src="assets/illustrations/form_section/step3_logo.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                </div>
-                <div class="enrollment__step-details">
-                  <strong class="enrollment__step-num">Step 3</strong>
-                  <p class="enrollment__step-brief">Confirm your enrollment</p>
-                </div>
-              </div>
-            </li>
-          </ol>
-
-          <!-- <div class="enrollment__form-break break"></div> -->
-
-          <div class="enrollment__form-module">
-            <form action="" method="get" class="enrollment__form">
-              <div class="enrollment__form-inputs">
-                
-                  <div class="enrollment__form-input">
-                    <label for="name" class = "enrollment__form-label">Name</label>
-                    <input type="text" name="name" id="name" />
-                    <div class = "placeholder">Full Name</div>
-                  </div>
-                  <div class="enrollment__form-input">
-                    <label for="email" class = "enrollment__form-label">Email</label>
-                    <input type="email" name="email" id="email"/>
-                    <div class = "placeholder">Email Id</div>
-                  </div>
-                  <div class="enrollment__form-input">
-
-                    <label for="experience" class = "enrollment__form-label">Experience</label>
-                    <select name="experience" id="experience" >
-                      <button><selectedcontent></selectedcontent></button>
-                      <option value="Aspiring PM">
-                        <img class = "experience-img" src="assets/illustrations/form_section/dropdowns/nature_13154336.png" alt="">
-                        <div class = "experience">Aspiring PM</div>
-                      </option>
-                      <option value="Early-Stage">
-                        <img class = "experience-img" src="assets/illustrations/form_section/dropdowns/rocket_5212161.png" alt="">
-                        <div class = "experience">Early-Stage PM</div>
-                      </option>
-                      <option value="Mid-Level">
-                        <img class = "experience-img" src="assets/illustrations/form_section/dropdowns/gears_2523183.png" alt="">
-                        <div class = "experience">Mid-Level PM</div>
-                      </option>
-                      <option value="Senior">
-                        <img class = "experience-img" src="assets/illustrations/form_section/dropdowns/medal_7696166.png" alt="">
-                        <div class = "experience">Senior PM</div>
-                      </option>
-                    </select>
-                  </div>
-                
-                
-                  <div class="enrollment__form-input">
-                    <label for="phone" class = "enrollment__form-label">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" />
-                    <div class = "placeholder">Phone Number</div>
-                  </div>
-                  <div class="enrollment__form-input">
-                    <label for="url" class = "enrollment__form-label">Linkedin Profile Link</label>
-                    <input type="url" name="url" id="url" />
-                    <div class = "placeholder">Linkedin Profile</div>
-                  </div>
-                  <div class="enrollment__form-input">
-                    <label for="skill" class = "enrollment__form-label">Current Profile/Skill Set</label>
-                    <select name="skill" id="skill">
-                      <button><selectedcontent></selectedcontent></button>
-                      <option value="developer">
-                        <img class = "skill-img" src="assets/illustrations/form_section/dropdowns/man_15258650.png" alt="">
-                        <div class = "skill">Developer / Engineer</div>
-                      </option>
-                      <option value="designer">
-                         <img class = "skill-img" src="assets/illustrations/form_section/dropdowns/graphic-designer_15673320.png" alt="">
-                        <div class = "skill">Designer (UX/UI/Product)</div>
-                      </option>
-                      <option value="marketing">
-                        <img class = "skill-img" src="assets/illustrations/form_section/dropdowns/graphic_3484227.png" alt="">
-                        <div class = "skill">Marketing</div>
-                      </option>
-                      <option value="analyst">
-                        <img class = "skill-img" src="assets/illustrations/form_section/dropdowns/budget-analyst_17160775.png" alt="">
-                        <div class = "skill">Operations / Analyst</div>
-                      </option>
-                      <option value="exploring">
-                        <img class = "skill-img" src="assets/illustrations/form_section/dropdowns/reading_8750683.png" alt="">
-                        <div class = "skill">Other / Exploring PM Role</div>
-                      </option>
-                    </select>
-                  </div>
-                
-              </div>
-              <div class="enrollment__cta">
-                <button class = "btn btn--primary" type="submit">Apply Now</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Community Section -->
-      <section class="community u-mb-180">
-        <div class="community__section">
+    
+    <!-- Community Section -->
+    <section class="community u-mu-180">
+      <div class="community__section">
         <div class="community__intro intro">
           <h2>Discover Our Product Community</h2>
           <p>Collaborate, Learn, and Grow Together!</p>
@@ -1206,24 +732,20 @@
               <h3>Builders Community</h3>
             </div>
             <div class="community__snap">
-              <img
-                src="assets/images/community-section/community_1.png"
+              <img src="assets/images/community-section/community_1.png"
                 alt="Builder community meetup with professionals attending an in-person learning session"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
 
           <div class="community__item community__item--2">
             <div class="community__title">
               <h3>Cohort Highlights</h3>
-             </div>
+            </div>
             <div class="community__snap">
-              <img
-                src="assets/images/community-section/community_2.png"
+              <img src="assets/images/community-section/community_2.png"
                 alt="Virtual cohort session showing engaged participants in an online learning environment"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
 
           </div>
@@ -1233,20 +755,17 @@
               <h3>Events, Meetups, Offsites</h3>
             </div>
             <div class="community__snap">
-              <img
-                src="assets/images/community-section/community_3.png"
-                alt="Team members collaborating during a professional meetup or offsite event"
-                loading="lazy"
-              />
+              <img src="assets/images/community-section/community_3.png"
+                alt="Team members collaborating during a professional meetup or offsite event" loading="lazy" />
             </div>
           </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Mentors Section -->
-      <section class="mentors u-mb-180">
-        <div class="mentors__section">
+    <!-- Mentors Section -->
+    <section id = "mentors" class="mentors u-mu-180">
+      <div class="mentors__section">
         <div class="mentors__intro intro">
           <h2>Learn from best in the game</h2>
           <p>Empowering Your Journey to Success!</p>
@@ -1256,250 +775,162 @@
           <div class="mentors-row">
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_1.png"
-                  alt="Photo of Kathryn Murphy"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_1.png" alt="Photo of Kathryn Murphy" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Kathryn Murphy</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Director of Product <span>@</span> <span>McKinsey</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo1.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo1.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
 
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_2.png"
-                  alt="Photo of Brooklyn Simmons"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_2.png" alt="Photo of Brooklyn Simmons" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Brooklyn Simmons</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Lead Product Manager <span>@</span> <span>Amazon</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo2.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo2.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
 
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_3.png"
-                  alt="Photo of Kathryn Murphy"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_3.png" alt="Photo of Kathryn Murphy" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Ronald Richards</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Sr. Product Manager <span>@</span> <span>Walmart</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo3.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo3.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
 
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_4.png"
-                  alt="Photo of Floyd Miles"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_4.png" alt="Photo of Floyd Miles" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Floyd Miles</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Product Manager <span>@</span> <span>Ola</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo4.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo4.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
-          
 
-          
+
+
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_5.png"
-                  alt="Photo of Esther Howard"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_5.png" alt="Photo of Esther Howard" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Esther Howard</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Product Analyst <span>@</span> <span>Microsoft</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo5.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo5.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
 
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_6.png"
-                  alt="Photo of Savannah Nguyen"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_6.png" alt="Photo of Savannah Nguyen" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Savannah Nguyen</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Sr. product Officer <span>@</span> <span>MasterCard</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo6.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo6.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
 
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_7.png"
-                  alt="Photo of Darlene Robertson"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_7.png" alt="Photo of Darlene Robertson" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Darlene Robertson</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Growth Analyst &copy; <span>Linkedin</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo7.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo7.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
 
             <div class="mentors__profile">
               <div class="mentors__image">
-                <img
-                  src="assets/images/mentors/mentor_8.png"
-                  alt="Photo of Darlene Robertson"
-                  loading="lazy"
-                />
+                <img src="assets/images/mentors/mentor_8.png" alt="Photo of Darlene Robertson" loading="lazy" />
               </div>
               <div class="mentors__details">
                 <div class="mentors__bio">
                   <div class="mentors__bio-part">
                     <h3>Oleg Ivanov</h3>
-                    <a href=""
-                      ><img
-                        src="assets/illustrations/social_icons/linkedin_icon.svg"
-                        alt="linkedin icon"
-                    /></a>
+                    <a href=""><img src="assets/illustrations/social_icons/linkedin_icon.svg" alt="linkedin icon" /></a>
                   </div>
                   <p class="mentors__designation">
                     Lead Developer &copy; <span>Adobe</span>
                   </p>
                 </div>
-                <div class = "mentors__companies">
-                <img
-                  src="assets/images/mentors-companies/company_logo8.png"
-                  aria-hidden="true"
-                />
+                <div class="mentors__companies">
+                  <img src="assets/images/mentors-companies/company_logo8.png" aria-hidden="true" />
                 </div>
               </div>
             </div>
@@ -1507,12 +938,12 @@
 
           </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Learning Outcomes -->
-      <section class="learning u-mb-180">
-        <div class="learning__section">
+    <!-- Learning Outcomes -->
+    <section class="learning u-mu-180">
+      <div class="learning__section">
         <div class="learning__intro intro">
           <h2>12 Weeks Learning Outcome</h2>
           <p>Implement Practical Frameworks</p>
@@ -1521,11 +952,7 @@
         <div class="learning__schedule-frame">
           <div class="learning__schedule-item">
             <div class="learning__schedule-icon">
-              <img
-                src="assets/illustrations/learning_section/live-room.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              <img src="assets/illustrations/learning_section/live-room.svg" alt="" aria-hidden="true" />
             </div>
             <div class="learning__schedule-info">
               <h4>Live Rooms</h4>
@@ -1535,11 +962,7 @@
 
           <div class="learning__schedule-item">
             <div class="learning__schedule-icon">
-              <img
-                src="assets/illustrations/learning_section/case-study.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              <img src="assets/illustrations/learning_section/case-study.svg" alt="" aria-hidden="true" />
             </div>
             <div class="learning__schedule-info">
               <h4>Case Study</h4>
@@ -1549,11 +972,7 @@
 
           <div class="learning__schedule-item">
             <div class="learning__schedule-icon">
-              <img
-                src="assets/illustrations/learning_section/assignment.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              <img src="assets/illustrations/learning_section/assignment.svg" alt="" aria-hidden="true" />
             </div>
             <div class="learning__schedule-info">
               <h4>Assignment Hours</h4>
@@ -1563,11 +982,7 @@
 
           <div class="learning__schedule-item">
             <div class="learning__schedule-icon">
-              <img
-                src="assets/illustrations/learning_section/interview.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              <img src="assets/illustrations/learning_section/interview.svg" alt="" aria-hidden="true" />
             </div>
             <div class="learning__schedule-info">
               <h4>Interview Session</h4>
@@ -1579,16 +994,12 @@
         <div class="learning__weekly-learnings">
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 1</p>
-              <div class = "learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card1.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>Strategic Thinking & Problem Solving</h3>
+              <p class="learning__card-label">Cohort Week 1</p>
+              <div class="learning__card-title-bundle">
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card1.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>Strategic Thinking & Problem Solving</h3>
               </div>
             </div>
 
@@ -1596,7 +1007,8 @@
 
             <div class="learning__outcomes">
               <div class="learning__outcome-item">
-                <div class="learning__session-tag learning__session-tag--orange learning__session-tag--orange">Live Rooms</div>
+                <div class="learning__session-tag learning__session-tag--orange learning__session-tag--orange">Live
+                  Rooms</div>
                 <p>Product Potential & Problem Solving</p>
               </div>
               <div class="learning__outcome-item">
@@ -1612,16 +1024,12 @@
 
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 2</p>
-              <div class = "learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card2.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>User Empathy & Design Thinking</h3>
+              <p class="learning__card-label">Cohort Week 2</p>
+              <div class="learning__card-title-bundle">
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card2.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>User Empathy & Design Thinking</h3>
               </div>
             </div>
 
@@ -1645,16 +1053,12 @@
 
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 3</p>
-              <div class = "learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card3.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>Design Innovative Solutions</h3>
+              <p class="learning__card-label">Cohort Week 3</p>
+              <div class="learning__card-title-bundle">
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card3.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>Design Innovative Solutions</h3>
               </div>
             </div>
 
@@ -1678,16 +1082,12 @@
 
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 4</p>
+              <p class="learning__card-label">Cohort Week 4</p>
               <div class="learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card4.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>Product Growth Understanding</h3>
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card4.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>Product Growth Understanding</h3>
               </div>
             </div>
 
@@ -1711,16 +1111,12 @@
 
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 5</p>
-              <div class = "learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card5.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>Analytical Skills</h3>
+              <p class="learning__card-label">Cohort Week 5</p>
+              <div class="learning__card-title-bundle">
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card5.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>Analytical Skills</h3>
               </div>
             </div>
 
@@ -1744,16 +1140,12 @@
 
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 6</p>
-              <div class = "learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card6.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>Technical Capabilities</h3>
+              <p class="learning__card-label">Cohort Week 6</p>
+              <div class="learning__card-title-bundle">
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card6.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>Technical Capabilities</h3>
               </div>
             </div>
 
@@ -1777,16 +1169,12 @@
 
           <div class="learning__card">
             <div class="learning__card-title">
-              <p class = "learning__card-label">Cohort Week 7</p>
-              <div class = "learning__card-title-bundle">
-              <div class="learning__card-icon">
-                <img
-                  src="assets/illustrations/learning_cards/card7.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <h3>Agile Coordination</h3>
+              <p class="learning__card-label">Cohort Week 7</p>
+              <div class="learning__card-title-bundle">
+                <div class="learning__card-icon">
+                  <img src="assets/illustrations/learning_cards/card7.svg" alt="" aria-hidden="true" />
+                </div>
+                <h3>Agile Coordination</h3>
               </div>
             </div>
 
@@ -1811,16 +1199,12 @@
           <div class="learning__card--secondary">
             <div class="learning__card-short u-br-r-0">
               <div class="learning__card-title">
-                <p class = "learning__card-label">Cohort Week 08-10</p>
-                <div class = "learning__card-title-bundle">
-                <div class="learning__card-icon">
-                  <img
-                    src="assets/illustrations/learning_cards/card7.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3>Final Product</h3>
+                <p class="learning__card-label">Cohort Week 08-10</p>
+                <div class="learning__card-title-bundle">
+                  <div class="learning__card-icon">
+                    <img src="assets/illustrations/learning_cards/card7.svg" alt="" aria-hidden="true" />
+                  </div>
+                  <h3>Final Product</h3>
                 </div>
               </div>
 
@@ -1836,16 +1220,12 @@
 
             <div class="learning__card-short u-br-l-0">
               <div class="learning__card-title">
-                <p class = "learning__card-label">Cohort Week 10-12</p>
-                <div class = "learning__card-title-bundle">
-                <div class="learning__card-icon">
-                  <img
-                    src="assets/illustrations/learning_cards/card8.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3>Mock Interview</h3>
+                <p class="learning__card-label">Cohort Week 10-12</p>
+                <div class="learning__card-title-bundle">
+                  <div class="learning__card-icon">
+                    <img src="assets/illustrations/learning_cards/card8.svg" alt="" aria-hidden="true" />
+                  </div>
+                  <h3>Mock Interview</h3>
                 </div>
               </div>
 
@@ -1859,13 +1239,13 @@
             </div>
           </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- tools -->
+    <!-- tools -->
 
-      <section class="tools u-mb-180">
-        <div class="tools__section">
+    <section class="tools u-mu-180">
+      <div class="tools__section">
         <div class="tools__intro intro">
           <h2>Craft your Ideas</h2>
           <p>Master Essential Tools</p>
@@ -1875,42 +1255,27 @@
             <img src="assets/images/tools/sql.png" alt="SQL database icon" />
           </li>
           <li class="tools__icon">
-            <img
-              src="assets/images/tools/miro.png"
-              alt="Miro collaboration tool icon"
-            />
+            <img src="assets/images/tools/miro.png" alt="Miro collaboration tool icon" />
           </li>
           <li class="tools__icon">
-            <img
-              src="assets/images/tools/jira.png"
-              alt="Jira project management tool icon"
-            />
+            <img src="assets/images/tools/jira.png" alt="Jira project management tool icon" />
           </li>
           <li class="tools__icon">
-            <img
-              src="assets/images/tools/slack.png"
-              alt="Slack team communication tool icon"
-            />
+            <img src="assets/images/tools/slack.png" alt="Slack team communication tool icon" />
           </li>
           <li class="tools__icon">
-            <img
-              src="assets/images/tools/figma.png"
-              alt="Figma UI/UX design tool icon"
-            />
+            <img src="assets/images/tools/figma.png" alt="Figma UI/UX design tool icon" />
           </li>
           <li class="tools__icon">
-            <img
-              src="assets/images/tools/amplitude.png"
-              alt="Amplitude product analytics tool icon"
-            />
+            <img src="assets/images/tools/amplitude.png" alt="Amplitude product analytics tool icon" />
           </li>
         </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Projects -->
-      <section class="projects u-mb-180">
-        <div class="projects__section">
+    <!-- Projects -->
+    <section id = "projects" class="projects u-mu-180">
+      <div class="projects__section">
         <div class="projects__intro intro">
           <h2>Enhance Skills by Solving Real Problems</h2>
           <p>
@@ -1921,12 +1286,8 @@
         <div class="projects__list">
           <div class="projects__card">
             <div class="projects__image">
-            <img
-              src="assets/images/projects/project_images/project_image1.png"
-              alt="Media Traker extension tool banner image"
-              loading="lazy"
-              aria-hidden="true"
-            />
+              <img src="assets/images/projects/project_images/project_image1.png"
+                alt="Media Traker extension tool banner image" loading="lazy" aria-hidden="true" />
             </div>
             <div class="projects__details">
               <div class="projects__card-section">
@@ -1954,54 +1315,36 @@
                 <div class="projects__profiles">
                   <div class="projects__profile-card">
                     <div class="projects__profile-image">
-                      <img
-                        src="assets/images/projects/students/student1.png"
-                        alt="Photo of Robert Fox"
-                      />
+                      <img src="assets/images/projects/students/student1.png" alt="Photo of Robert Fox" />
                     </div>
-                    <div class = "projects__profile-info">
-                    <h4>Robert Fox</h4>
-                    <p>Backend Engineer</p>
+                    <div class="projects__profile-info">
+                      <h4>Robert Fox</h4>
+                      <p>Backend Engineer</p>
                     </div>
-                    <a href="#"
-                      ><img class = "projects__profile-linkedin"
-                        src="assets/images/projects/linkedin_icon.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                    <a href="#"><img class="projects__profile-linkedin" src="assets/images/projects/linkedin_icon.svg"
+                        alt="Linkedin icon" /></a>
                   </div>
                   <div class="projects__profile-card">
                     <div class="projects__profile-image">
-                      <img
-                        src="assets/images/projects/students/student2.png"
-                        alt="Ohoto of Kristin Watson"
-                      />
+                      <img src="assets/images/projects/students/student2.png" alt="Ohoto of Kristin Watson" />
                     </div>
-                    <div class = "projects__profile-info">
-                    <h4>Kristin Watson</h4>
-                    <p>Frontend Engineer</p>
+                    <div class="projects__profile-info">
+                      <h4>Kristin Watson</h4>
+                      <p>Frontend Engineer</p>
                     </div>
-                    <a href="#"
-                      ><img class = "projects__profile-linkedin"
-                        src="assets/images/projects/linkedin_icon.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                    <a href="#"><img class="projects__profile-linkedin" src="assets/images/projects/linkedin_icon.svg"
+                        alt="Linkedin icon" /></a>
                   </div>
                   <div class="projects__profile-card">
                     <div class="projects__profile-image">
-                      <img
-                        src="assets/images/projects/students/student3.png"
-                        alt="Photo of Dianne Rusell"
-                      />
+                      <img src="assets/images/projects/students/student3.png" alt="Photo of Dianne Rusell" />
                     </div>
-                    <div class = "projects__profile-info">
-                    <h4>Dianne Russell</h4>
-                    <p>Growth Marketer</p>
+                    <div class="projects__profile-info">
+                      <h4>Dianne Russell</h4>
+                      <p>Growth Marketer</p>
                     </div>
-                    <a href="#"
-                      ><img class = "projects__profile-linkedin"
-                        src="assets/images/projects/linkedin_icon.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                    <a href="#"><img class="projects__profile-linkedin" src="assets/images/projects/linkedin_icon.svg"
+                        alt="Linkedin icon" /></a>
                   </div>
                 </div>
               </div>
@@ -2010,12 +1353,8 @@
 
           <div class="projects__card">
             <div class="projects__image">
-            <img
-              src="assets/images/projects/project_images/project_image2.png"
-              alt="Business planner application banner image"
-              loading="lazy"
-              aria-hidden="true"
-            />
+              <img src="assets/images/projects/project_images/project_image2.png"
+                alt="Business planner application banner image" loading="lazy" aria-hidden="true" />
             </div>
             <div class="projects__details">
               <div class="projects__card-section">
@@ -2040,85 +1379,61 @@
                 <div class="projects__profiles">
                   <div class="projects__profile-card">
                     <div class="projects__profile-image">
-                      <img
-                        src="assets/images/projects/students/student4.png"
-                        alt="Photo of Jacob Jones"
-                      />
+                      <img src="assets/images/projects/students/student4.png" alt="Photo of Jacob Jones" />
                     </div>
-                    <div class = "projects__profile-info">
-                    <h4>Jacob Jones</h4>
-                    <p>Product Manager</p>
+                    <div class="projects__profile-info">
+                      <h4>Jacob Jones</h4>
+                      <p>Product Manager</p>
                     </div>
-                    <a href="#"
-                      ><img class = "projects__profile-linkedin"
-                        src="assets/images/projects/linkedin_icon.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                    <a href="#"><img class="projects__profile-linkedin" src="assets/images/projects/linkedin_icon.svg"
+                        alt="Linkedin icon" /></a>
                   </div>
                   <div class="projects__profile-card">
                     <div class="projects__profile-image">
-                      <img
-                        src="assets/images/projects/students/student5.png"
-                        alt="Photo of Albert Flores"
-                      />
+                      <img src="assets/images/projects/students/student5.png" alt="Photo of Albert Flores" />
                     </div>
-                    <div class = "projects__profile-info">
-                    <h4>Albert Flores</h4>
-                    <p>ML Engineer</p>
+                    <div class="projects__profile-info">
+                      <h4>Albert Flores</h4>
+                      <p>ML Engineer</p>
                     </div>
-                    <a href="#"
-                      ><img class = "projects__profile-linkedin"
-                        src="assets/images/projects/linkedin_icon.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                    <a href="#"><img class="projects__profile-linkedin" src="assets/images/projects/linkedin_icon.svg"
+                        alt="Linkedin icon" /></a>
                   </div>
                   <div class="projects__profile-card">
                     <div class="projects__profile-image">
-                      <img
-                        src="assets/images/projects/students/student6.png"
-                        alt="Photo of Arlene McCoy"
-                      />
+                      <img src="assets/images/projects/students/student6.png" alt="Photo of Arlene McCoy" />
                     </div>
-                    <div class = "projects__profile-info">
-                    <h4>Arlene McCoy</h4>
-                    <p>Product Designer</p>
+                    <div class="projects__profile-info">
+                      <h4>Arlene McCoy</h4>
+                      <p>Product Designer</p>
                     </div>
-                    <a href="#"
-                      ><img class = "projects__profile-linkedin"
-                        src="assets/images/projects/linkedin_icon.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                    <a href="#"><img class="projects__profile-linkedin" src="assets/images/projects/linkedin_icon.svg"
+                        alt="Linkedin icon" /></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Testimonials -->
-      <section class="testimonials u-mb-180">
-        <div class="testimonials__section">
+    <!-- Testimonials -->
+    <section id = "testimonials" class="testimonials u-mu-180">
+      <div class="testimonials__section">
         <div class="testimonials__intro intro">
           <h2>What Our Students Have to Say</h2>
           <p>Real Stories, Real Success</p>
         </div>
         <div class="testimonials__items">
-          <article
-            class="testimonials__card"
-            aria-label="Testimonial by Jerome Bell"
-          >
+          <article class="testimonials__card" aria-label="Testimonial by Jerome Bell">
             <div class="testimonials__profile">
               <div class="testimonials__image">
-                <img
-                  src="assets/images/testimonials/image_1.png"
-                  alt="Photo of Jerome Bell"
-                />
+                <img src="assets/images/testimonials/image_1.png" alt="Photo of Jerome Bell" />
               </div>
               <div class="testimonials__details">
-              <h3>Jerome Bell</h3>
-              <p>Product Analyst</p>
+                <h3>Jerome Bell</h3>
+                <p>Product Analyst</p>
               </div>
             </div>
             <p class="testimonials__review">
@@ -2129,20 +1444,14 @@
             </p>
           </article>
 
-          <article
-            class="testimonials__card"
-            aria-label="Testimonial by Devon Lane"
-          >
+          <article class="testimonials__card" aria-label="Testimonial by Devon Lane">
             <div class="testimonials__profile">
               <div class="testimonials__image">
-                <img
-                  src="assets/images/testimonials/image_2.png"
-                  alt="Photo of Devon Lane"
-                />
+                <img src="assets/images/testimonials/image_2.png" alt="Photo of Devon Lane" />
               </div>
               <div class="testimonials__details">
-              <h3>Devon Lane</h3>
-              <p>Sr. Product Manager</p>
+                <h3>Devon Lane</h3>
+                <p>Sr. Product Manager</p>
               </div>
             </div>
             <p class="testimonials__review">
@@ -2153,20 +1462,14 @@
             </p>
           </article>
 
-          <article
-            class="testimonials__card"
-            aria-label="Testimonial by Ralph Edwards"
-          >
+          <article class="testimonials__card" aria-label="Testimonial by Ralph Edwards">
             <div class="testimonials__profile">
               <div class="testimonials__image">
-                <img
-                  src="assets/images/testimonials/image_3.png"
-                  alt="Photo of Ralph Edwards"
-                />
+                <img src="assets/images/testimonials/image_3.png" alt="Photo of Ralph Edwards" />
               </div>
               <div class="testimonials__details">
-              <h3>Ralph Edwards</h3>
-              <p>Product Development Lead</p>
+                <h3>Ralph Edwards</h3>
+                <p>Product Development Lead</p>
               </div>
             </div>
             <p class="testimonials__review">
@@ -2177,13 +1480,13 @@
             </p>
           </article>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- FAQ -->
+    <!-- FAQ -->
 
-      <section class="faq u-mb-180">
-        <div class="faq__section">
+    <section class="faq u-mu-180">
+      <div class="faq__section">
         <div class="faq__intro intro">
           <h2>FAQ</h2>
           <p>Answers to your questions</p>
@@ -2192,224 +1495,187 @@
           <div class="faq__card">
             <div class="faq__pair">
               <h4>Is this cohort right for me?</h4>
-              <p></p>
+              <button class="faq-icon">
+                <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>This cohort is ideal for anyone looking to build or enhance their project management skills. Whether you're new to the field or have some experience, the program is designed to provide practical, actionable knowledge for professionals at any stage of their career.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>Are there any prerequisites?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>There are no strict prerequisites for this cohort, but a basic understanding of business operations or prior experience in team collaboration can be helpful. The program is designed to be accessible to beginners while also providing valuable insights for more experienced professionals.</p>
+            </div>          
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>What is the selection criteria?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>The selection is based on your application, interest in project management, and willingness to commit to the cohort. We’re looking for motivated individuals ready to actively participate and grow through the program.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>When does the cohort start?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>The upcoming cohort kicks off on 1st November 2025. You'll receive onboarding materials, schedule details, and access to the learning platform a few days before the start date to help you hit the ground running.</p>
+            </div>
+            
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>How much does the cohort cost?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>The full cost of the cohort is Rs. 30,000, which includes live sessions, mentorship, project work, and access to all course materials. Payment plans and limited scholarships may also be available for eligible participants.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>Is this a degree, diploma or a certificate?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>This cohort awards a certificate of completion upon finishing the program. It’s a practical, skills-focused credential designed to boost your project management expertise—not a formal degree or diploma.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>When would I need to pay for this?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>Payment is typically due at the time of enrollment to secure your spot in the cohort. We’ll provide clear instructions and deadlines during the registration process.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>Do you guarantee placements after the cohort?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>While we don’t guarantee job placements, we provide strong career support, including portfolio reviews, interview prep, and networking opportunities to help you land project management roles.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>What is the refund policy?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>We offer a full refund if you cancel within the first 7 days of the cohort start date. After that, refunds are not available, but we’re happy to discuss deferrals or credit toward future cohorts.</p>
+            </div>
           </div>
 
           <div class="faq__card">
             <div class="faq__pair">
               <h4>I have more queries, how can I reach out?</h4>
-              <p></p>
+              <button class="faq-icon">
+              <img src="assets/illustrations/faq_section/chevron_down.svg" alt="Expand answer" />
+              </button>
             </div>
-            <button class="faq-icon">
-              <img
-                src="assets/illustrations/faq_section/chevron_down.svg"
-                alt="Expand answer"
-              />
-            </button>
+            <div class="faq__answer">
+              <p>Feel free to email us at info@nlpm.com with any questions. Our team is happy to help and typically responds within 24–48 hours.</p>
+            </div>
           </div>
         </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer role="contentinfo">
-      <section class="footer">
-        <div class="footer__items">
-          <div class="footer__handles">
-            <div class="footer__logo">
-            <img src="assets/images/logo.jpg" alt="Next Level PM Logo" />
-            </div>
-            <ul class="footer__social-handle">
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit our X"
-                  ><img
-                    src="assets/images/footer-icons/icon1.png"
-                    alt="X logo for social media link"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit our Linkedin"
-                  ><img
-                    src="assets/images/footer-icons/icon2.png"
-                    alt="Linkedin logo for social media link"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit our Peerlist"
-                  ><img
-                    src="assets/images/footer-icons/icon3.png"
-                    alt="Peerlist logo for social media link"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit our Instagram"
-                  ><img
-                    src="assets/images/footer-icons/icon4.png"
-                    alt="Instagram logo for social media link"
-                /></a>
-              </li>
+  <footer role="contentinfo">
+    <section class="footer u-mu-180">
+      <div class="footer__items">
+        <div class="footer__handles">
+          <div class="footer__logo">
+            <a href="/"><img src="assets/images/logo.jpg" alt="Next Level PM Logo" /></a>
+          </div>
+          <ul class="footer__social-handle">
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our X"><img
+                  src="assets/images/footer-icons/icon1.png" alt="X logo for social media link" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Linkedin"><img
+                  src="assets/images/footer-icons/icon2.png" alt="Linkedin logo for social media link" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Peerlist"><img
+                  src="assets/images/footer-icons/icon3.png" alt="Peerlist logo for social media link" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram"><img
+                  src="assets/images/footer-icons/icon4.png" alt="Instagram logo for social media link" /></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__navbar" aria-label="Footer navigation">
+          <div class="footer__nav-list">
+            <h3 class="footer__nav-title">Launching Soon</h3>
+            <ul class="footer__nav-items">
+              <li>Product Design Cohort</li>
+              <li>Product Management Cohort</li>
+              <li>App Development Cohort</li>
+              <li>Web Development Cohort</li>
             </ul>
           </div>
-          <nav class="footer__navbar" aria-label="Footer navigation">
-            <div class="footer__nav-list">
-              <h3 class="footer__nav-title">Courses</h3>
-              <ul class="footer__nav-items">
-                <li><a href="#">Product Management Cohort</a></li>
-                <li><a href="#">Product Design Cohort</a></li>
-                <li><a href="#">App Development Cohort</a></li>
-                <li><a href="#">Web Development Cohort</a></li>
-              </ul>
-            </div>
 
-            <div class="footer__nav-list">
-              <h3 class="footer__nav-title">Others</h3>
-              <ul class="footer__nav-items">
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Refund Policy</a></li>
-                <li><a href="#">Hire from Us</a></li>
-              </ul>
-            </div>
+          <!-- <div class="footer__nav-list">
+            <h3 class="footer__nav-title">Others</h3>
+            <ul class="footer__nav-items">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div> -->
 
-            <div class="footer__nav-list">
-              <h3 class="footer__nav-title">Contact</h3>
-              <ul class="footer__nav-items">
-                <li><a href="#">Next Level PM</a></li>
-                <li><a href="mailto:info@nlpm.com">info@nlpm.com</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <small>Copyright &copy; Next Level PM All rights reserved</small>
-      </section>
-    </footer>
-  </body>
+          <div class="footer__nav-list">
+            <h3 class="footer__nav-title">Contact</h3>
+            <ul class="footer__nav-items">
+              <li><a href="#">Next Level PM</a></li>
+              <li><a href="mailto:info@nlpm.com">info@nlpm.com</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <small>Copyright &copy; Next Level PM All rights reserved</small>
+    </section>
+  </footer>
+</body>
+<script src="index.js"></script>
 </html>

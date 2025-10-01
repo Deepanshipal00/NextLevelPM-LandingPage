@@ -50,6 +50,7 @@
     --space-10: 8rem;
     --space-lg: 10rem;
     --space-12: 12rem;
+    --space-16: 16rem;
     --space-20: 20rem;
 
     /* Typography/fonts */
@@ -114,6 +115,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{

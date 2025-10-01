@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Next Level PM</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar sticky">
+        <!-- navbar -->
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="/"><img src="assets/images/logo.jpg" alt="Next Level PM Logo" /></a>
+            </div>
+
+            <nav aria-label="Main site navigation">
+                <ul class="navbar__menu">
+                    <li><a href="index.html#modules">Modules</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#mentors">Mentors</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" aria-label="Hamburger button">
+                <img src="assets/images/hamburger-icon.png" alt="" srcset="">
+            </button>
+        </div>
+    </header>
+    <div class="navbar__overlay hidden"></div>
+    <nav class="navbar__mobile">
+
+        <ul>
+            <li><a href="index.html#modules">Modules</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#mentors">Mentors</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <!-- Enrollment Section -->
+    <section class="enrollment u-mb-180 u-mu-220">
+      <div class="enrollment-section">
+        <div class="enrollment__intro intro">
+          <h2>Enroll Now and Unlock Your Product Management Journey!</h2>
+          <p>Seamless Admission: Designed to Elevate Your Experience</p>
+        </div>
+
+        <div class="enrollment__highlights">
+          <div class="enrollment__highlight">
+            <p class="enrollment__header">Placement</p>
+            <p class="enrollment__detail">support for 1 Year</p>
+          </div>
+
+          <!-- <div class="enrollment__highlight-break break"></div> -->
+
+          <div class="enrollment__highlight">
+            <p class="enrollment__header">3 Months</p>
+            <p class="enrollment__detail">Course Duration</p>
+          </div>
+
+          <!-- <div class="enrollment__highlight-break break"></div> -->
+
+          <!-- <div class="enrollment__highlight">
+            <p class="enrollment__header">Rs.30,000</p>
+            <p class="enrollment__detail">Course Fee</p>
+          </div> -->
+
+          <!-- <div class="enrollment__highlight-break break"></div> -->
+
+          <div class="enrollment__highlight">
+            <p class="enrollment__header">Learn</p>
+            <p class="enrollment__detail">from Experts</p>
+          </div>
+
+          <!-- <div class="enrollment__highlight-break break"></div> -->
+
+          <div class="enrollment__highlight">
+            <p class="enrollment__header">Practical</p>
+            <p class="enrollment__detail">Learning Approach</p>
+          </div>
+        </div>
+
+        <div class="enrollment__action-form">
+          <ol class="enrollment__submission-steps">
+            <li>
+              <div class="enrollment__submission-step">
+                <div class="enrollment__step-icon-box enrollment__step-icon-box--stroke">
+                  <img class="enrollment__step-icon u-pl2" src="assets/illustrations/form_section/step1_logo.svg" alt=""
+                    aria-hidden="true" />
+                </div>
+                <div class="enrollment__step-details">
+                  <strong class="enrollment__step-num">Step 1</strong>
+                  <p class="enrollment__step-brief">Quick form submission</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="enrollment__submission-step">
+                <div class="enrollment__step-icon-box enrollment__step-icon-box--fill">
+                  <img class="enrollment__step-icon" src="assets/illustrations/form_section/step2_logo.svg" alt=""
+                    aria-hidden="true" />
+                </div>
+                <div class="enrollment__step-details">
+                  <strong class="enrollment__step-num">Step 2</strong>
+                  <p class="enrollment__step-brief">
+                    Individual session with founders
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="enrollment__submission-step">
+                <div class="enrollment__step-icon-box enrollment__step-icon-box--fill">
+                  <img class="enrollment__step-icon" src="assets/illustrations/form_section/step3_logo.svg" alt=""
+                    aria-hidden="true" />
+                </div>
+                <div class="enrollment__step-details">
+                  <strong class="enrollment__step-num">Step 3</strong>
+                  <p class="enrollment__step-brief">Confirm your enrollment</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <!-- <div class="enrollment__form-break break"></div> -->
+
+          <div class="enrollment__form-module">
+            <form action="" method="get" class="enrollment__form">
+              <div class="enrollment__form-inputs">
+
+                <div class="enrollment__form-input">
+                  <label for="name" class="enrollment__form-label">Name</label>
+                  <input type="text" name="name" id="name" />
+                  <div class="placeholder">Full Name</div>
+                </div>
+                <div class="enrollment__form-input">
+                  <label for="email" class="enrollment__form-label">Email</label>
+                  <input type="email" name="email" id="email" />
+                  <div class="placeholder">Email Id</div>
+                </div>
+                <div class="enrollment__form-input">
+
+                  <label for="experience" class="enrollment__form-label">Experience</label>
+                  <select name="experience" id="experience">
+                    <button>
+                      <selectedcontent></selectedcontent>
+                    </button>
+                    <option value="Aspiring PM">
+                      <img class="experience-img" src="assets/illustrations/form_section/dropdowns/nature_13154336.png"
+                        alt="">
+                      <div class="experience">Aspiring PM</div>
+                    </option>
+                    <option value="Early-Stage">
+                      <img class="experience-img" src="assets/illustrations/form_section/dropdowns/rocket_5212161.png"
+                        alt="">
+                      <div class="experience">Early-Stage PM</div>
+                    </option>
+                    <option value="Mid-Level">
+                      <img class="experience-img" src="assets/illustrations/form_section/dropdowns/gears_2523183.png"
+                        alt="">
+                      <div class="experience">Mid-Level PM</div>
+                    </option>
+                    <option value="Senior">
+                      <img class="experience-img" src="assets/illustrations/form_section/dropdowns/medal_7696166.png"
+                        alt="">
+                      <div class="experience">Senior PM</div>
+                    </option>
+                  </select>
+                </div>
+
+
+                <div class="enrollment__form-input">
+                  <label for="phone" class="enrollment__form-label">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" />
+                  <div class="placeholder">Phone Number</div>
+                </div>
+                <div class="enrollment__form-input">
+                  <label for="url" class="enrollment__form-label">Linkedin Profile Link</label>
+                  <input type="url" name="url" id="url" />
+                  <div class="placeholder">Linkedin Profile</div>
+                </div>
+                <div class="enrollment__form-input">
+                  <label for="skill" class="enrollment__form-label">Current Profile/Skill Set</label>
+                  <select name="skill" id="skill">
+                    <button>
+                      <selectedcontent></selectedcontent>
+                    </button>
+                    <option value="developer">
+                      <img class="skill-img" src="assets/illustrations/form_section/dropdowns/man_15258650.png" alt="">
+                      <div class="skill">Developer / Engineer</div>
+                    </option>
+                    <option value="designer">
+                      <img class="skill-img"
+                        src="assets/illustrations/form_section/dropdowns/graphic-designer_15673320.png" alt="">
+                      <div class="skill">Designer (UX/UI/Product)</div>
+                    </option>
+                    <option value="marketing">
+                      <img class="skill-img" src="assets/illustrations/form_section/dropdowns/graphic_3484227.png"
+                        alt="">
+                      <div class="skill">Marketing</div>
+                    </option>
+                    <option value="analyst">
+                      <img class="skill-img"
+                        src="assets/illustrations/form_section/dropdowns/budget-analyst_17160775.png" alt="">
+                      <div class="skill">Operations / Analyst</div>
+                    </option>
+                    <option value="exploring">
+                      <img class="skill-img" src="assets/illustrations/form_section/dropdowns/reading_8750683.png"
+                        alt="">
+                      <div class="skill">Other / Exploring PM Role</div>
+                    </option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="enrollment__cta">
+                <button class="btn btn--primary" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+     <footer role="contentinfo">
+    <section class="footer">
+      <div class="footer__items">
+        <div class="footer__handles">
+          <div class="footer__logo">
+            <img src="assets/images/logo.jpg" alt="Next Level PM Logo" />
+          </div>
+          <ul class="footer__social-handle">
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our X"><img
+                  src="assets/images/footer-icons/icon1.png" alt="X logo for social media link" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Linkedin"><img
+                  src="assets/images/footer-icons/icon2.png" alt="Linkedin logo for social media link" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Peerlist"><img
+                  src="assets/images/footer-icons/icon3.png" alt="Peerlist logo for social media link" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram"><img
+                  src="assets/images/footer-icons/icon4.png" alt="Instagram logo for social media link" /></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__navbar" aria-label="Footer navigation">
+          <div class="footer__nav-list">
+            <h3 class="footer__nav-title">Launching Soon</h3>
+            <ul class="footer__nav-items">
+              <li>Product Management Cohort</li>
+              <li>Product Design Cohort</li>
+              <li>App Development Cohort</li>
+              <li>Web Development Cohort</li>
+            </ul>
+          </div>
+
+          <!-- <div class="footer__nav-list">
+            <h3 class="footer__nav-title">Others</h3>
+            <ul class="footer__nav-items">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div> -->
+
+          <div class="footer__nav-list">
+            <h3 class="footer__nav-title">Contact</h3>
+            <ul class="footer__nav-items">
+              <li><a href="#">Next Level PM</a></li>
+              <li><a href="mailto:info@nlpm.com">info@nlpm.com</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <small>Copyright &copy; Next Level PM All rights reserved</small>
+    </section>
+  </footer>
+
+</body>
+<script src="index.js"></script>
+</html>
