@@ -34,12 +34,102 @@
     display: flex;
     flex-direction: column;
     padding: var(--space-0);
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    position: relative;
+    overflow: hidden;
 }
+
+.mentors__profile.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for natural flow */
+.mentors__profile:nth-child(1) { transition-delay: 0s; }
+.mentors__profile:nth-child(2) { transition-delay: 0.12s; }
+.mentors__profile:nth-child(3) { transition-delay: 0.24s; }
+.mentors__profile:nth-child(4) { transition-delay: 0.36s; }
+.mentors__profile:nth-child(5) { transition-delay: 0.48s; }
+.mentors__profile:nth-child(6) { transition-delay: 0.6s; }
+.mentors__profile:nth-child(7) { transition-delay: 0.72s; }
+.mentors__profile:nth-child(8) { transition-delay: 0.84s; }
+
+.mentors__profile:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mentors__profile:hover .mentors__image{
+    transform: scale(1.03);
+    transition: transform 0.4s ease;
+}
+
+
+.mentors__profile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,140,0,0.05) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.mentors__profile::before {
+    opacity: 1;
+}
+
+
+.mentors__profile h3
+.mentors__profile .mentors__designation
+.mentors__profile .mentors__companies{
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mentors__profile.visible h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.mentor-card.visible .mentors__designation {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.mentor-card.visible .mentors__companies {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
 
 .mentors__image{
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mentors__profile.visible .mentors__image{
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.2s;
 }
 
 .mentors__image img{

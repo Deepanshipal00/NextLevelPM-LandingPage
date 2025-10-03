@@ -51,3 +51,53 @@
   flex: 0 0 auto;
 }
 
+.company__logo{
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.company__logo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.company__logo:nth-child(1).visible {
+    transition-delay: 0s;
+}
+
+.company__logo:nth-child(2).visible {
+    transition-delay: 0.1s;
+}
+
+.company__logo:nth-child(3).visible {
+    transition-delay: 0.2s;
+}
+
+.company__logo:nth-child(4).visible {
+    transition-delay: 0.3s;
+}
+
+.company__logo:nth-child(5).visible {
+    transition-delay: 0.4s;
+}
+
+.company__logo:nth-child(6).visible {
+    transition-delay: 0.5s;
+}
+
+.company__logo:nth-child(7).visible {
+    transition-delay: 0.6s;
+}
+
+.company__logo:nth-child(8).visible {
+    transition-delay: 0.7s;
+}
+
+.company__logo:nth-child(9).visible {
+    transition-delay: 0.8s;
+}
+
+
+

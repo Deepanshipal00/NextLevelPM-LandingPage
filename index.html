@@ -118,43 +118,43 @@
         </p>
         <div class="tech-firms__logo">
           <ul class="tech-firms__logo-list ">
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_1.png" alt="Amazon logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_2.png" alt="Microsoft logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_3.png" alt="Phone Pe logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_4.png" alt="Adobe logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_5.png" alt="Razor Pay logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_6.png" alt="Blue Learn logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_7.png" alt="JP Morgan Chase & Co Logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_8.png" alt="Wells Fargo logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_9.png" alt="Airbus logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_10.png" alt="Axis bank logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_11.png" alt="Grappus logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_12.png" alt="Gojek logo" />
             </li>
-            <li>
+            <li class = "company__logo">
               <img src="assets/images/tech-firms/logo_13.png" alt="Fampay logo" />
             </li>
           </ul>
@@ -617,8 +617,18 @@
       </div>
     </section>
 
+    <!-- Features queue Section -->
+    <section class="feature-queue u-mu-180">
+      <ul class="feature-queue__list">
+        <li class="feature-queue__item">Experts mentorship</li>
+        <li class="feature-queue__item">Honest feedback</li>
+        <li class="feature-queue__item">Mock interviews</li>
+        <li class="feature-queue__item">Life time career support</li>
+      </ul>
+    </section>
+
      <!-- Enrollment-offer section -->
-    <section id = "pricing" class="enrollment-offer u-mu-180">
+    <section id = "pricing" class="enrollment-offer u-mu-100">
       <div class="enrollment-offer-section">
         <div class="enrollment-offer__cta">
           <div class="enrollment-offer__launch">
@@ -626,15 +636,21 @@
               <p class="enrollment-offer__label">Launching on</p>
               <p class="enrollment-offer__date">1 July 2025</p>
             </div>
-            <img src="assets/illustrations/enrollment_section/Discount_icon.svg" alt="" aria-hidden="true" />
+            <div class = "discount-badge">
+             <img src="assets/images/discount-badge.png" alt="" aria-hidden="true" />
+              <div class = "discount-items">
+                <p class = "discount-percentage">25%</p>
+                <p class = "discount-text">Discount</p>
+              </div>
+            </div>
           </div>
 
           <div class="enrollment-offer__pricing">
             <div>
               <p class="enrollment-offer__price-label">Price</p>
-              <div class="u-flex u-ai-center u-gap-8">
-                <span class="enrollment-offer__price">30,000</span>
-                <span class="enrollment-offer__original-price">39,800</span>
+              <div class="price-container u-flex u-ai-center u-gap-8">
+                <span class="enrollment-offer__price new-price">39,999</span>
+                <span class="enrollment-offer__original-price old-price">60,000</span>
               </div>
             </div>
             <p class="enrollment-offer__alert">
@@ -706,16 +722,6 @@
       </div>
     </section>
 
-
-    <!-- Features queue Section -->
-    <section class="feature-queue u-mu-100">
-      <ul class="feature-queue__list">
-        <li class="feature-queue__item">Experts mentorship</li>
-        <li class="feature-queue__item">Honest feedback</li>
-        <li class="feature-queue__item">Mock interviews</li>
-        <li class="feature-queue__item">Life time career support</li>
-      </ul>
-    </section>
 
     
     <!-- Community Section -->
@@ -1426,7 +1432,7 @@
           <p>Real Stories, Real Success</p>
         </div>
         <div class="testimonials__items">
-          <article class="testimonials__card" aria-label="Testimonial by Jerome Bell">
+          <article class="testimonials__card gradient-container" aria-label="Testimonial by Jerome Bell">
             <div class="testimonials__profile">
               <div class="testimonials__image">
                 <img src="assets/images/testimonials/image_1.png" alt="Photo of Jerome Bell" />
@@ -1444,7 +1450,7 @@
             </p>
           </article>
 
-          <article class="testimonials__card" aria-label="Testimonial by Devon Lane">
+          <article class="testimonials__card gradient-container" aria-label="Testimonial by Devon Lane">
             <div class="testimonials__profile">
               <div class="testimonials__image">
                 <img src="assets/images/testimonials/image_2.png" alt="Photo of Devon Lane" />
@@ -1462,7 +1468,7 @@
             </p>
           </article>
 
-          <article class="testimonials__card" aria-label="Testimonial by Ralph Edwards">
+          <article class="testimonials__card gradient-container" aria-label="Testimonial by Ralph Edwards">
             <div class="testimonials__profile">
               <div class="testimonials__image">
                 <img src="assets/images/testimonials/image_3.png" alt="Photo of Ralph Edwards" />

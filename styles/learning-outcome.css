@@ -101,7 +101,85 @@
     gap: var(--space-4);
     background-color: var(--white);
     color: black;
+
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
+
+/* Odd cards - slide from left */
+.learning__card:nth-child(odd) {
+    transform: translateX(-60px);
+}
+
+/* Even cards - slide from right */
+.learning__card:nth-child(even) {
+    transform: translateX(60px);
+}
+
+.learning__card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Staggered delays */
+.learning__card:nth-child(1) { transition-delay: 0s; }
+.learning__card:nth-child(2) { transition-delay: 0.15s; }
+.learning__card:nth-child(3) { transition-delay: 0.3s; }
+.learning__card:nth-child(4) { transition-delay: 0.45s; }
+.learning__card:nth-child(5) { transition-delay: 0.6s; }
+.learning__card:nth-child(6) { transition-delay: 0.75s; }
+.learning__card:nth-child(7) { transition-delay: 0.9s; }
+.learning__card:nth-child(8) { transition-delay: 1.05s; }
+
+
+/* Subtle hover effect */
+.learning__card:hover {
+    transform: translateX(0) translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Week label animation */
+.learning__card-label {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.learning__card.visible .learning__card-label {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+/* Week content elements fade in */
+.learning__card h3,
+.learning__session-tag,
+.learning__outcomes p{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.learning__card.visible h3{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.learning__card.visible .learning__session-tag {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.learning__card.visible .learning__outcomes p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+
 
 .learning__card-short{
     padding: var(--space-4) var(--space-2);
@@ -112,6 +190,7 @@
     background-color: var(--white);
     color: black;
 }
+
 
 
 .learning__card-title{
