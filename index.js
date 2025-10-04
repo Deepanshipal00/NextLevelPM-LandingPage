@@ -242,3 +242,50 @@ document.querySelectorAll('.gradient-container').forEach(container => {
     });
 });
 
+// Countdown timer
+
+setInterval(() => {
+const targetDate = new Date("Nov 1, 2025 00:00:00").getTime();
+const currentDate = Date.now();
+
+const difference = targetDate - currentDate;
+
+
+  if (difference <= 0) {
+    document.querySelector(".countdown").textContent = "Launched!";
+    clearInterval();
+    return;
+  }
+
+
+const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+const hours = Math.floor((difference % (1000 * 60 * 60 * 24))/ (1000 * 60 * 60));
+const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((difference % (1000 * 60))/1000);
+
+  document.querySelector(".countdown").textContent =
+    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+}, 1000);
+
+
+// Pricing Interactions
+
+const oldPrice = document.querySelector('.old-price');
+const newPrice = document.querySelector('.new-price');
+const discountPercentage = document.querySelector('.discount-percentage');
+
+function percentagePriceUpdate(basePrice, discount){
+    const discountedPrice = Math.round(basePrice * (1 - discount));
+
+    oldPrice.textContent = basePrice.toLocaleString('en-IN');
+    newPrice.textContent = discountedPrice.toLocaleString('en-IN');
+    discountPercentage.textContent = `${(discount * 100).toFixed(0)}%`;
+
+    if (!oldPrice || !newPrice || !discountPercentage) {
+  console.warn('Pricing elements not found in DOM');
+  return;
+}
+}
+
+percentagePriceUpdate(70000, 0.40);
