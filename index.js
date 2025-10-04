@@ -1,29 +1,3 @@
-// Faq
-
-document.querySelectorAll(".faq__card").forEach((item) => {
-    item.addEventListener("click", function(e){
-        const faqAnswer = item.querySelector(".faq__answer");
-        const faqIcon = item.querySelector(".faq-icon");
-
-        const activeFaqAnswer = document.querySelector(".faq__answer.active");
-        const rotateFaqIcon = document.querySelector(".faq-icon.rotate");
-
-        if(activeFaqAnswer === faqAnswer){
-            activeFaqAnswer.classList.remove("active");
-            rotateFaqIcon.classList.remove("rotate");
-            return;
-        }
-
-        if(activeFaqAnswer && rotateFaqIcon){
-            activeFaqAnswer.classList.remove("active");
-            rotateFaqIcon.classList.remove("rotate");
-        }
-
-        faqAnswer.classList.toggle("active");
-        faqIcon.classList.toggle("rotate")
-    })
-})
-
 // Navbar
 
 // const header = document.querySelector(".navbar");
