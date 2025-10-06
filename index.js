@@ -54,7 +54,7 @@ illustrations.forEach(e => {
     observer.observe(e);
 })
 
-observer.observe(heading)
+observer.observe(heading);
 
 
 

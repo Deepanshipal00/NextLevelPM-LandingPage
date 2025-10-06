@@ -91,6 +91,7 @@ const faqObserver = new IntersectionObserver((entries, observer) => {
         if(entry.isIntersecting){
             loadFaq();
             observer.disconnect
+            faqObserver.unobserve(entry.target);
         }
     })
 }, {})
