@@ -176,6 +176,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
+    position: relative;
 }
 
 label{
@@ -268,7 +269,7 @@ input:focus{
     font-weight: var(--font-regular);
     font-size: var(--font-size-lg);
     line-height: var(--lh-300);
-    letter-spacing: var(--ls-8);
+    letter-spacing: var(--ls-4);
     color: var(--gray-300);
     width: 100%;
     background-color: transparent;
@@ -364,6 +365,59 @@ input:focus{
 .dropdown-item.selected {
     color: var(--white);
 }
+
+
+
+
+.custom-dropdown.error, .placeholder-div.error {
+    border-color: #e53e3e;
+}
+
+.custom-dropdown.success, .custom-dropdown.success {
+    border-color: #38a169;
+}
+
+.error{
+    color: #ff8181;
+    font-family: var(--font-inter);
+    font-weight: var(--font-light);
+    font-size: var(--font-size-base);
+    position: absolute;
+    top: calc(100% + var(--space-0));
+    left: 0;
+    opacity: 0;
+    animation: slideDown 0.3s;
+}
+
+.error.show {
+    opacity: 1;
+}
+
+.success{
+    color: #38a169;
+    font-family: var(--font-inter);
+    font-weight: var(--font-light);
+    font-size: var(--font-size-base);
+    position: absolute;
+    top: calc(100% + var(--space-0));
+    left: 0;
+    opacity: 0;
+}
+
+.success.show {
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+        
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }}
 
 
 @media (min-width: 25rem){

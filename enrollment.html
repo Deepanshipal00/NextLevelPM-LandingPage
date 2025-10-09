@@ -150,13 +150,18 @@
                     <input type="text" name="name" id="name" autocomplete="off" class="input-value" required />
                     <span class="placeholder">Full Name</span>
                   </div>
+                  <small class="error" id="nameError"></small>
+                  <small class="success" id="nameSuccess">✓ Valid</small>
                 </div>
+
                 <div class="enrollment__form-input">
                   <label for="email" class="enrollment__form-label">Email</label>
                   <div class="placeholder-div">
                     <input type="email" name="email" id="email" required />
                     <span class="placeholder">Email Id</span>
                   </div>
+                  <small class="error" id="emailError"></small>
+                  <small class="success" id="emailSuccess">✓ Valid</small>
                 </div>
 
 
@@ -166,13 +171,18 @@
                     <input type="tel" name="phone" id="phone" required />
                     <span class="placeholder">Phone Number</span>
                   </div>
+                  <small class="error" id="phoneError"></small>
+                  <small class="success" id="phoneSuccess">✓ Valid</small>
                 </div>
+
                 <div class="enrollment__form-input">
                   <label for="url" class="enrollment__form-label">Linkedin Profile Link</label>
                   <div class="placeholder-div">
-                    <input type="url" name="url" id="url" />
-                    <span class="placeholder">Linkedin Profile</span>
+                    <input type="url" name="url" id="linkedin" />
+                    <span class="placeholder">https://linkedin.com/in/yourprofile</span>
                   </div>
+                  <small class="error" id="linkedinError"></small>
+                  <small class="success" id="linkedinSuccess">✓ Valid</small>
                 </div>
 
                 <div class="enrollment__form-input">
@@ -191,9 +201,12 @@
                       <li class="dropdown-item" data-value="Mid-Level">Mid-Level PM</li>
                       <li class="dropdown-item" data-value="Senior">Senior PM</li>
                     </ul>
+
                     <!-- Hidden input for form submission -->
                     <input type="hidden" name="experience" id="experience" value="" required>
                   </div>
+                  <small class="error" id="experienceError"></small>
+                  <small class="success" id="experienceSuccess">✓ Valid</small>
                 </div>
 
                 <div class="enrollment__form-input">
@@ -216,7 +229,8 @@
                     <!-- Hidden input for form submission -->
                     <input type="hidden" name="skills" id="skills" value="" required>
                   </div>
-
+                  <small class="error" id="skillsError"></small>
+                  <small class="success" id="skillsSuccess">✓ Valid</small>
                 </div>
 
               </div>
