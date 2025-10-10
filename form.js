@@ -6,6 +6,7 @@ class CustomDropdown {
         this.items = element.querySelectorAll('.dropdown-item');
         this.hiddenInput = element.querySelector('input[type="hidden"]');
         this.text = element.querySelector('.dropdown-text');
+        this.originalParent = this.menu.parentElement;
         this.init();
     }
 
@@ -47,7 +48,17 @@ class CustomDropdown {
     }
 
     openMenu() {
-        // console.log('Opening menu'); // Debug
+
+        const rect = this.dropdown.getBoundingClientRect();
+
+        // move menu to body to escape stacking context
+        document.body.appendChild(this.menu);
+        this.menu.style.position = 'absolute';
+        this.menu.style.top = `${rect.bottom + window.scrollY}px`;
+        this.menu.style.left = `${rect.left + window.scrollX}px`;
+        this.menu.style.width = `${rect.width}px`;
+        this.menu.style.zIndex = 99999;
+
         this.menu.classList.add('active');
         this.toggle.classList.add('active');
     }
@@ -56,6 +67,10 @@ class CustomDropdown {
         // console.log('Closing menu'); // Debug
         this.menu.classList.remove('active');
         this.toggle.classList.remove('active');
+
+        if (this.originalParent !== this.menu.parentElement) {
+            this.originalParent.appendChild(this.menu);
+        }
     }
 
     selectItem(item) {
@@ -181,9 +196,6 @@ function validateField(fieldName) {
         field.classList.remove('error-response');
         field.classList.add('success-response');
         error.classList.remove('show');
-        if (field.value.trim() !== '') {
-            // success.classList.add('show');
-        }
         return true;
     } else {
         field.classList.remove('error-response', 'success-response');
@@ -193,7 +205,7 @@ function validateField(fieldName) {
     }
 }
 
-['name', 'phone', 'email', 'linkedin', 'skills', 'experience'].forEach(fieldName => {
+['name', 'phone', 'email', 'linkedin'].forEach(fieldName => {
     const field = document.getElementById(fieldName);
 
     field.addEventListener('blur', () => validateField(fieldName));
@@ -209,16 +221,19 @@ const dropdowns = document.querySelectorAll('.custom-dropdown');
 dropdowns.forEach(item => {
   const toggle = item.querySelector('.dropdown-toggle');
   const menu = item.querySelector('.dropdown-menu');
-  const field = item.querySelector('input'); // Fixed: querySelector for single element
-  
+  const field = item.querySelector('input');
+  const menuItems = item.querySelectorAll('.dropdown-item');
+
   toggle.addEventListener('click', () => {
     // Check if dropdown is CURRENTLY OPEN (before toggle happens)
     const wasOpen = menu.classList.contains('active');
     
     // If it WAS open and now closing, validate
-    if (wasOpen && !field.value) {
+
+    if(wasOpen && !field.value) {
       validateField(field.id);
     }
+
   });
 
     document.addEventListener('click', (e) => {
@@ -232,6 +247,15 @@ dropdowns.forEach(item => {
       }
     }
   });
+
+  menuItems.forEach(menu => {
+    menu.addEventListener('click', () => {
+        const value = menu.getAttribute('data-value');
+        field.value = value;
+
+        validateField(field.id);
+    })
+  })
 
 });
 

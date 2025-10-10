@@ -152,6 +152,10 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     width: 100%;
+
+    position: relative;
+    z-index: 1;
+    overflow: visible !important;
 }
 
 .enrollment__form-module{
@@ -169,14 +173,16 @@
 .enrollment__form-inputs{
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-6);
+    /* gap: var(--space-2); */
+    column-gap: var(--space-2);
+    overflow: visible !important;
 }
 
 .enrollment__form-input{
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
-    position: relative;
+    min-height: 16.4rem;
 }
 
 label{
@@ -202,7 +208,7 @@ label{
     box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
     outline: none;
     transition: border 0.3s ease, box-shadow 0.3s ease;
-    position: relative
+    position: relative;
 }
 
 input{
@@ -262,6 +268,7 @@ input:focus{
     outline: none;
     transition: border 0.3s ease, box-shadow 0.3s ease;
 
+    z-index: 2;
 }
 
 .dropdown-toggle {
@@ -318,11 +325,10 @@ input:focus{
     margin: 0;
     max-height: var(--space-16);
     overflow-y: auto;
-    opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 9999;
 
 
     background-color: var(--gray-800);
@@ -335,12 +341,14 @@ input:focus{
     box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
     outline: none;
     transition: border 0.3s ease, box-shadow 0.3s ease;
+    display: none;
+    
 }
 
 .dropdown-menu.active {
-    opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    display: block;
 }
 
 .dropdown-item {
@@ -377,12 +385,13 @@ input:focus{
     border-color: #38a169;
 }
 
+
 .error{
     color: #ff8181;
     font-family: var(--font-inter);
     font-weight: var(--font-light);
     font-size: var(--font-size-base);
-    position: absolute;
+    /* position: relative; */
     top: calc(100% + var(--space-0));
     left: 0;
     opacity: 0;
@@ -398,7 +407,7 @@ input:focus{
     font-family: var(--font-inter);
     font-weight: var(--font-light);
     font-size: var(--font-size-base);
-    position: absolute;
+    /* position: relative; */
     top: calc(100% + var(--space-0));
     left: 0;
     opacity: 0;
