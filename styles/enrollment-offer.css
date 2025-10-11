@@ -1,6 +1,27 @@
 /* Enrollment offer section */
 
 /* CTA Card */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--space-2);
+}
+
+.disclaimer{
+    font-family: var(--font-inter);
+    font-size: var(--font-size-base);
+    color: rgb(255, 130, 130);
+    text-align: center;
+    padding-bottom: var(--space-2);
+}
+
+.enrollment-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .enrollment-offer__cta{
     display: flex;
