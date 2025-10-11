@@ -17,6 +17,7 @@
 @import './base.css';
 @import './component.css';
 @import './utils.css';
+@import './mentor.css';
 
 /* Base (0 - 29.99rem) = mobile-first */
 /* 62.5% of 16 = 10px */

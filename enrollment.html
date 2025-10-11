@@ -235,7 +235,7 @@
 
               </div>
               <div class="enrollment__cta">
-                <button class="btn btn--primary" type="submit">Submit</button>
+                <button class="btn btn--primary" id = "submission" type="submit">Submit</button>
               </div>
             </form>
           </div>
@@ -304,6 +304,19 @@
       <small>Copyright &copy; Next Level PM All rights reserved</small>
     </section>
   </footer>
+
+    <!-- Modal -->
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-icon" id="modalIcon"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+        </div>
+        <div class="modal-content" id="modalContent"></div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
 
 </body>
 <script src="index.js"></script>

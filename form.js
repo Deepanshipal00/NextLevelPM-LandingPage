@@ -219,48 +219,43 @@ function validateField(fieldName) {
 const dropdowns = document.querySelectorAll('.custom-dropdown');
 
 dropdowns.forEach(item => {
-  const toggle = item.querySelector('.dropdown-toggle');
-  const menu = item.querySelector('.dropdown-menu');
-  const field = item.querySelector('input');
-  const menuItems = item.querySelectorAll('.dropdown-item');
+    const toggle = item.querySelector('.dropdown-toggle');
+    const menu = item.querySelector('.dropdown-menu');
+    const field = item.querySelector('input');
+    const menuItems = item.querySelectorAll('.dropdown-item');
 
-  toggle.addEventListener('click', () => {
-    // Check if dropdown is CURRENTLY OPEN (before toggle happens)
-    const wasOpen = menu.classList.contains('active');
-    
-    // If it WAS open and now closing, validate
+    toggle.addEventListener('click', () => {
+        // Check if dropdown is CURRENTLY OPEN (before toggle happens)
+        const wasOpen = menu.classList.contains('active');
 
-    if(wasOpen && !field.value) {
-      validateField(field.id);
-    }
+        // If it WAS open and now closing, validate
 
-  });
+        if (wasOpen && !field.value) {
+            validateField(field.id);
+        }
+
+    });
 
     document.addEventListener('click', (e) => {
-    // If click is outside this dropdown and menu is open
-    if (!item.contains(e.target) && menu.classList.contains('active')) {
-      menu.classList.remove('active');
-      
-      // Validate when closing
-      if (!field.value) {
-        validateField(field.id);
-      }
-    }
-  });
+        // If click is outside this dropdown and menu is open
+        if (!item.contains(e.target) && menu.classList.contains('active')) {
+            menu.classList.remove('active');
 
-  menuItems.forEach(menu => {
-    menu.addEventListener('click', () => {
-        const value = menu.getAttribute('data-value');
-        field.value = value;
+            // Validate when closing
+            if (!field.value) {
+                validateField(field.id);
+            }
+        }
+    });
 
-        validateField(field.id);
+    menuItems.forEach(menu => {
+        menu.addEventListener('click', () => {
+            const value = menu.getAttribute('data-value');
+            field.value = value;
+
+            validateField(field.id);
+        })
     })
-  })
 
 });
-
-
-
-
-
 
